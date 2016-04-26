@@ -1,0 +1,211 @@
+﻿<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Mon Compte</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <link href="css/newstyle.css" rel="stylesheet" type="text/css" />
+    <link href="css/fr_style.css" rel="stylesheet" type="text/css" />
+    <style>
+    body{ background: none;}
+    </style>
+</head>
+<body>
+    <div id="content">
+        <div class="ord_c_r"></div><div class="ord_c_l"></div>
+        <div class="a_n">
+            <a href="http://fr.tidebuy.com">Accueil</a> &gt; <a href="Default">Mon Compte</a>&gt; <a href="Order">Commande</a> &gt; <span>Détails de la commande</span>
+        </div>
+        <div class="ord_no">
+            Numéros de commande.<span class="red2">802257</span><br />État des commandes<span class="red2">Paiement en attente</span>
+            <input name="" type="button" class="btoh_btn" onclick="goOrderHistry();" />
+        </div><dl class="od_t">
+            <dt>
+                <div class="od_tit">Détails de la commande</div>
+                <div class="ord_c_r2"></div>
+                <div class="ord_c_l2"></div>
+            </dt>
+            <dd>Numéros de commande.802257</dd>
+            <dd>Date pour passer la commande:02-28-2015 18:16:14<span></span></dd>
+        </dl><div class="a_tab_t">État des commandes: <b>Paiement en attente</b></div><table width="892" border="0" cellspacing="0" cellpadding="0" class="a_table osb">
+            <tbody>
+                <tr>
+                    <th width="65">Sous-Ordre N.</th>
+                    <th width="205" style="text-align: left; padding-left: 6px;">Article</th>
+                    <th width="92">Prix de l'article</th>
+                    <th width="58">Montant</th>
+                    <th width="96">Statut sous-commande</th>
+                    <th>économisez</th>
+                    <th width="129">Frais d'expédition</th>
+                    <th width="113" class="rline"><div class="rdiv"><span>&nbsp;</span></div>Grand Total</th>
+                </tr>
+                <tr>
+                    <td valign="top" class="tac">1465898</td>
+                    <td valign="top">
+                        <dl class="d1">
+                            <dt><a href="http://fr.tidebuy.com/product/Robe-de-Jour-Couleur-Solide-Manches-Longues-11154763.html"><img src="http://sfr.tidebuy.com/images/product/11/11154/11154763_1_s.jpg" id="img1465898" /></a></dt>
+                            <dd>
+                                <a href="http://fr.tidebuy.com/product/Robe-de-Jour-Couleur-Solide-Manches-Longues-11154763.html">Robe de Jour Couleur Solide Manches Longues </a>
+                                <span>Couleur-Noir </span><span>Taille-M</span>
+                            </dd>
+                        </dl>
+                    </td>
+                    <td valign="top">EUR15.69</td>
+                    <td valign="top">1</td>
+                    <td valign="top">
+                        &nbsp;
+                        Paiement en attente
+                    </td>
+                    <td rowspan="1" valign="top">&nbsp;</td>
+                    <td rowspan="1" valign="top">Accéléré <br /> EUR27.62</td>
+                    <td rowspan="1" valign="top">EUR43.31</td>
+                </tr>
+            </tbody>
+        </table><div class="sd_tit">Expédition et Livraison</div><dl class="sd_dl sad">
+            <dt>Adresse de livraison</dt>
+            <dd>12312  123123</dd>
+            <dd>12312</dd>
+            <dd>12312</dd>
+            <dd>21312,12312,St.lucia</dd>
+            <dd>Code Postal:12312</dd>
+            <dd>Numéros de téléphone:465464</dd>
+            <dd>
+                <input id="btn_address" name="modifAddress" type="button" class="msa_btn" onclick="showaddressDiv('d_address')" />
+            </dd>
+            <div id="d_address" class="a_box2" style="position: absolute; left: 35%; top: 650px; display: none;">
+                <div style="position: relative;"><a href="javascript:closeaddressDiv('d_address');" class="a_close"></a></div>
+                <table width="650" border="0" cellspacing="0" cellpadding="0" id="tb_address">
+                    <tbody>
+                        <tr>
+                            <td colspan="2">
+                                <input id="hd_orderID" type="hidden" value="802257" />
+                                <input id="hd_address1ID" type="hidden" value="892939" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="160" class="dl">Mon Nom <span>*</span></td>
+                            <td width="490">
+                                <input id="tb_sendContactname" type="text" class="t1" value="12312  123123" onblur="CheckValid('sendContactname');ValidSameAddress();" />
+                                <input id="hd_OldsendContactname" type="hidden" value="12312  123123" /><br />
+                                <span id="span_sendContactname" style="color: Red; display: none;">Nom complet ne peut pas être vide!</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="dl">
+                                Adresse 1 <span>*</span>
+                            </td>
+                            <td>
+                                <textarea id="tb_sendAddress1" cols="" rows="" class="t2" onblur="CheckValid('sendAddress1');ValidSameAddress();">12312</textarea>
+                                <input id="hd_OldsendAddress1" type="hidden" value="12312" /><br />
+                                <span id="span_sendAddress1" style="color: Red; display: none;">Adresse destinataire ne peut pas être vide !</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="dl">Adresse 2 &nbsp;&nbsp;</td>
+                            <td>
+                                <textarea id="tb_sendAddress2" cols="" rows="" class="t2" onblur="ValidSameAddress();">12312</textarea>
+                                <input id="hd_OldsendAddress2" type="hidden" value="12312" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="dl">Ville <span>*</span></td>
+                            <td>
+                                <input id="tb_sendCity" type="text" class="t1" value="21312" onblur="CheckValid('sendCity');ValidSameAddress();" />
+                                <input id="hd_OldsendCity" type="hidden" value="21312" /><br />
+                                <span id="span_sendCity" style="color: Red; display: none;">Ville ne peut pas être vide!</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="tar">Etat / Province / Région &nbsp;&nbsp;&nbsp;</td>
+                            <td>
+                                <input id="tb_sendProvince" type="text" class="t1" value="12312" onblur="CheckValid('sendCity');ValidSameAddress();" />
+                                <input id="hd_OldsendProvince" type="hidden" value="12312" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="dl">Pays / Région <span>*</span></td>
+                            <td>
+                                <input id="tb_sendCountry" type="text" class="t1" value="St.lucia" disabled="true" />
+                                <input id="tb_sendCountryID" type="hidden" value="198" disabled="true" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="dl">Code Postal <span>*</span></td>
+                            <td>
+                                <input id="tb_sendCode" type="text" class="t1" value="12312" onblur="CheckValid('sendCode');ValidSameAddress();" />
+                                <input id="hd_OldsendCode" type="hidden" value="12312" /><br />
+                                <span id="span_sendCode" style="color: Red; display: none;">Zip ne peut pas être vide!</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="dl">Numéros de téléphone <span>*</span></td>
+                            <td>
+                                <input id="tb_sendPhone" type="text" value="465464" class="t1" onblur="CheckValid('sendPhone');ValidSameAddress();" />
+                                <input id="hd_OldsendPhone" type="hidden" value="465464" /><br />
+                                <span id="span_sendPhone" style="color: Red; display: none;">Veuillez vérifier votre numéro de téléphone et suivre le format correct.!</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="padding-left: 30px;" class="fs11p"><p style="padding-right: 60px; width:500px;">
+                                Votre numéro de téléphone est nécessaire afin que nous ou la compagnie maritime puissions-vous contacter en cas de problèmes.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>
+                                <input id="btn_sendSave" disabled="true" type="button" class="a_save_btn2" onclick="SaveSendAddress();" />
+                                <input name="" type="button" class="a_close_btn" onclick="closeaddressDiv('d_address');" />
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table width="526" height="369px" border="0" cellspacing="0" cellpadding="0" id="tb_addressMsg" style="display: none">
+                    <tbody>
+                        <tr style="height: 35px;">
+                            <td><span class="red2" style="font-weight: bolder;">Les modifications de votre adresse de livraison ont été soumises, veuillez attendre la confirmation de notre service clientèle.</span>
+                            </td>
+                        </tr>
+                        <tr style="height: 35px;">
+                            <td style="text-align: center"><input id="Button1" type="button" value=" Close " onclick="HideTbAddress()" /></td>
+                        </tr>
+                        <tr><td></td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </dl><dl class="sd_dl bad">
+            <dt>Adresse de facturation</dt>
+            <dd>12312  123123</dd>
+            <dd>
+                <div style="width: 390px;">
+                    12312
+                </div>
+            </dd>
+            <dd><div style="width: 390px;">12312</div></dd>
+            <dd>Ville:21312,12312,St.lucia</dd>
+            <dd>Code Postal:12312</dd>
+            <dd>Numéros de téléphone:465464</dd>
+        </dl><div id="d_address_moblie"></div><div class="a_method"><b>Modes d'expéditions</b>Expédition accélérée</div><dl class="a_lm">
+            <dt class="fl">Laissez un message</dt>
+            <dd class="fl" style="width: 720px;">
+                <ul></ul>
+            </dd>
+        </dl><div class="ot_tit">Suivre la commande</div><table width="892" border="0" cellspacing="0" cellpadding="0" class="a_table ttb">
+            <tbody>
+                <tr>
+                    <th width="131" class="d1">Date de l'Opération</th>
+                    <th width="690">Information</th>
+                    <th width="71" class="rline"><div class="rdiv"><span>&nbsp;</span></div> Operator</th>
+                </tr>
+                <tr><td colspan="3" style="height: 6px; line-height: 6px;">&nbsp;</td></tr>
+                <tr>
+                    <td class="d1">02-28-2015 18:16:00</td>
+                    <td>Une commande a été placé.</td>
+                    <td>kuaiweijie</td>
+                </tr>
+                <tr><td colspan="3" style="height: 6px; line-height: 6px;">&nbsp;</td></tr>
+            </tbody>
+        </table><input name="" type="button" class="btoh_btn bto2" onclick="goOrderHistry();" /><div class="clear"></div>
+    </div>
+
+</body>
+</html>

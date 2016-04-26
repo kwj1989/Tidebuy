@@ -1,0 +1,848 @@
+﻿@charset "utf-8";
+/*===================================================public-start==========================================================*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,textarea,p,blockquote,th,td,iframe {margin:0;padding:0;}
+body { font-size:12px; text-align: left; margin: 0 auto; padding: 0; color: #333; background: url(http://sfr.tidebuy.com/images/newimages/bodybg.gif) repeat-x; font-family:Arial;}
+body>div{ text-align:left;}
+fieldset,img {border:0;}
+input,select{ margin:0px; padding:0px;font-family:Arial}
+input,button{ color:#333; vertical-align:middle; font-family:Arial;}
+button{ cursor:pointer;}
+address,caption,cite,dfn,em,var {font-style:normal;font-weight:normal;}
+ol,ul {list-style:none;}
+h1,h2,h3,h4,h5,h6 {}
+q:before,q:after {content:'';}
+abbr,acronym {border:0;}   
+.clear{ clear:both; padding:0px; margin:0px; font:0px; line-height:0px;}
+.clearfix:after{content:"."; display:block; height:0;clear:both; visibility:hidden;}
+* html .clearfix{ height:1%;}
+.fl{ float:left;}
+.fr{ float:right;}
+.posr{position:relative;}
+/*Custom*/
+.inputz{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing:border-box;height:22px;*height:18px;padding:3px 2px 0px;}
+.in_block{display:-moz-inline-stack;display:inline-block;vertical-align:middle;zoom: 1;*display: inline;}
+#wrapper{ width: 1000px; position: relative; margin: 0 auto;}
+/*margin*/
+.m10p0p{ margin:10px 0px;}
+
+/*links*/
+a:link,a:visited{ color:#000; text-decoration:none;}
+a:hover{color:#CE2226;}
+a:active{ color:#333;}
+#top, a.nav, #left-menu dt, .gallery_con dd span, .gallery_con dd strong, .Products dd span, .Products dt, .category dt, #Shopping dt, #bottom span, .Fabric dt, .Wholesale dt { font-size: 12px;}
+/*===========================================================public-end=====================================================================*/
+/*==============================================================header======================================================================*/
+#header_wrap { font-size: 12px; margin: 0 auto 10px; width: 1000px;}
+/*-top-*/
+#top{ height:26px; line-height:25px; color:#fff;}
+#top dl{float:left; position:absolute; cursor:pointer; background-color:#333;}
+#top dd a{ color:#fff; padding:0 5px;}
+#top dd a:hover{ text-decoration:underline;}
+#top .changeM {position: relative;padding-right: 0;width: 66px;margin: 0 0 0 5px;padding: 0;cursor: pointer;float: right; *z-index:20; }
+#top .changeM>div {background: url(http://sfr.tidebuy.com/images/dadapopaotang.png) no-repeat 96% center;padding: 0 17px 0 10px;}
+#top .changeM ul{ display:none;right: -1px;width: 66px;position: absolute; background:#FFF;border: 1px solid #333;border-top:none;box-shadow:none; z-index:400;}
+#top .changeM ul li {color:#666; padding: 0 0 0 15px; }
+#top .changeM ul li:hover {color:#000;background:none;text-decoration:underline;}
+
+#top .changeM.hover>div{background: url(http://s.tidebuy.com/images/tu_u.png) no-repeat 86% center #fff;color: #000;padding: 0 17px 0 10px;}
+#top .changeM.hover ul{ display:block;}
+ 
+ 
+
+.nav2{ font-weight:bolder; color:#000;}
+.nav_Div{ clear:both;}
+/*-header-*/
+#header{margin:14px 0 15px;height:59px;position:relative;clear: both;overflow: hidden;width: 1000px;height: 90px;}
+#header .fortop {background: url(http://sfr.tidebuy.com/images/fr_fortop.png) no-repeat;width: 293px;height: 23px;position: absolute; display:none; left: 250px;top: -1px;}
+
+#header .top_right{text-align: right;color:#000; clear:both; width:1000px;line-height: 20px;height: 20px;}
+#header .top_right a{ padding:0 5px; color:#000;display: inline-block;}
+#header .top_right a:hover{ text-decoration:underline;}
+#header .top_right .live{ background:url(http://sfr.tidebuy.com/images/newimages/live.png) no-repeat 5px -1px; padding-left:28px;}
+#header .top_right a.livechart{ padding-left:25px; background:url(http://sfr.tidebuy.com/images/newimages/livechart_pp.jpg) no-repeat 2px 1px;}
+#header .top_right .note{display: inline-block;height: 18px;background: #d03231;border-radius: 2px;border: 1px solid #B74545;line-height: 18px;padding: 0 5px;margin: 0 5px;font-family: arial; font-weight:normal; color:#FFF;}
+
+#header .logo_outer{ clear:both; overflow:hidden;}
+/*
+.logo{ float: left; width:213px; height:59px; background:url(http://sfr.tidebuy.com/images/newimages/logo.png) no-repeat;}
+.logo a{ display:block; width:213px; height:59px;}
+*/
+.logo{background: url("http://sfr.tidebuy.com/images/logo_z.png") no-repeat scroll 0 0 transparent;float: left;height: 69px;width: 220px;margin-top: -8px; position:relative; background:none;}
+.logo a{ display:block; height: 69px;width: 220px;}
+.logo a {background: url("http://sfr.tidebuy.com/images/logo_z.png") no-repeat scroll left top transparent;height: 69px;left: 0;position: absolute; top:0px;width: 220px;}
+.search{ float:left; margin:23px 40px 0 28px; width:323px; height:30px; border:solid 1px #a2a2a2; text-align:left; display:block; display:inline;}
+/*margin:23px 40px 0 35px;*/
+input.text{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing:border-box;height:28px;*height:23px;float:left;padding:5px 2px 0px;*padding-top:8px; margin-left:2px;width: 282px;background: none;border: none; outline:none;}
+input.sbut{ width:35px; height:27px; background:url(http://sfr.tidebuy.com/images/newimages/sbut.gif) no-repeat left 1px; border:none; cursor:pointer;}
+input.sbut:hover{ background-position:left bottom;}
+.shipping{ float:left; margin-top:15px; width:249px; height:41px;}
+.bag{ cursor: pointer;float:left; margin:20px 0 0 40px; padding-left:28px; width:70px; height:33px; background: url(http://sfr.tidebuy.com/images/newimages/bag.jpg) no-repeat left bottom ; display:inline;}
+.bag:hover{ background-position:left top;}
+.bag:hover a,.bag:hover span#ShopCount,.bag a:hover span#ShopCount{color:#cc0000;}
+#ShopCount{ text-decoration:underline; }
+.arrowtop dd{}
+.arrowtop a{ display:block;}
+#JoinUs{ position:relative;display:-moz-inline-stack;display:inline-block;zoom: 1;*display: inline; z-index: 2;}
+#JoinUs span{ background: url("http://sfr.tidebuy.com/images/newimages/5coupon.png") no-repeat scroll 0 2px transparent;_background-image:url("http://sfr.tidebuy.com/images/newimages/5coupon.gif"); display: block; height:28px; position: absolute; right:79px; top: 23px; width: 270px;}
+#JoinUs b{ font-weight:normal;}
+#JoinUs b.fb_login{ height:19px; width:85px; display:inline-block;margin:0 5px -6px 0; background:url(http://sfr.tidebuy.com/images/fb_login_s.jpg); cursor:pointer;*zoom:1;}
+#JoinUs span.googlelogin{ position:relative;z-index: 2; right:0; top:0; cursor:pointer; background: url("http://sfr.tidebuy.com/images/google_login.png") no-repeat scroll 0 0 transparent;height: 17px;line-height:17px;margin:0 5px;text-indent: -99999px;width: 60px; /*display:inline-block;*/display: none;}
+.home_shopcart { background: url("http://sfr.tidebuy.com/images/newimages/shopcart.png") no-repeat scroll 0 3px transparent; cursor: pointer; display: inline; float: left; height: 33px; margin:23px 0 0 0px; padding-left: 38px; width: 74px; font-size:13px; line-height:16px;}
+.home_shopcart:hover{background-position:0 -32px;}
+.home_shopcart:hover a{color:#cf1111;}
+.home_shopcart b,.home_shopcart a:hover b{ color:#cf1111; font-weight:normal;padding-left:4px;}
+.shipping2{width:155px;margin-top:15px;margin-left:10px;float:left;}
+.shipping_nonav{}
+/*-nav-*/
+#nav{ height:32px; line-height:32px; background:url(http://sfr.tidebuy.com/images/newimages/navbg.gif) repeat-x left bottom; }
+#menus .n0 a{ text-indent:-999em;background: url(http://sfr.tidebuy.com/images/nav-homebg.jpg) no-repeat center 4px;}
+#menus .n0 a:hover{background:url(http://sfr.tidebuy.com/images/nav-homebg.jpg) no-repeat center -55px;}
+.cat-item{ position:relative;float:left;display:block;   height:30px; line-height:30px;   color:#000000;border-bottom: solid 2px #666666; z-index:220; cursor:pointer;}
+.cat-item > a{display:block;padding:0 16px; height:21px; line-height:21px;  border-right:solid 1px #999999; font-weight:bold;}
+.cat-item.n0 > a{padding:0px 16px;}
+.cat-item > a span{ }
+.cat-item  .newnav_arrow{width:14px; height:8px; background:url(http://sfr.tidebuy.com/images/newimages/tu2.gif) no-repeat scroll left top; position:absolute;top:0px;}
+.cat-item > a:hover{ background:#cc0000; border-bottom: solid 4px #cc0000; border-right:solid 1px #cc0000; color:#fff; height:28px;}
+.cat-item > a.stranger_a{ background:#cc0000; border-bottom: solid 4px #cc0000; color:#fff; height:28px;}
+.nav_bg{margin-left:-1px; padding-left:1px; display:block;background:#cc0000; border-bottom: solid 4px #cc0000;height:28px;}
+/*-nav-con-*/
+.cat-item_list{ /*width:730px;*/  cursor:default;width:550px;background:#f7f7f7; position:absolute;top:32px; display:none; z-index:300; overflow:hidden; padding-right:7px; background:url(http://sfr.tidebuy.com/images/newimages/sub-nav-vertical-border.png) no-repeat right bottom;}
+.cat-item_list a:hover{ text-decoration:underline;}
+.cat-item_listsun{ padding-bottom:7px; background:url(http://sfr.tidebuy.com/images/newimages/sub-nav-horizontal-border.png) no-repeat left bottom; float:left;}
+
+.cat-item_list.myNav66 { margin-left: 0; width: 702px;}
+.cat-item_list.myNav66 .nav_Div ul{ width:212px;}
+.cat-item_list.myNav66 .zk_left{width:672px}
+
+.cat-item_list.myNav4349 { margin-left: -64px;width: 670px;}
+.cat-item_list.myNav4349 .nav_Div ul{ width:200px}
+.cat-item_list.myNav4349 .zk_left{ width:640px}
+
+.cat-item_list.myNav100859 {margin-left: -195px;width:556px}
+.cat-item_list.myNav100859 .nav_Div ul{ width:165px;}
+.cat-item_list.myNav100859 .zk_left{ width:526px;}
+
+.cat-item_list.myNav100110 {margin-left: -356px;}
+.cat-item_list.myNav101609 {margin-left: -354px;}
+
+.cat-item_list.myNav7175 {margin-left: -143px;}
+
+.cat-item_list.myNav6396 {margin-left:-230px;width:665px;}
+.cat-item_list.myNav6396 .nav_Div ul{ width:195px;}
+.cat-item_list.myNav6396 .zk_left{ width:635px;}
+
+.cat-item_list.myNav6097 {margin-left: -460px;}
+
+.cat-item_list.myNav106181 {margin-left: -143px;}
+#nav li dt a .wub{ border-right:none;}
+.zk{ background-color:#fbfbfb; float:left; padding:15px;}
+.zk_left{ float:left; width:520px; /*background:url(http://sfr.tidebuy.com/images/newimages/bg.gif) repeat-y right top;*/}
+.zk_left ul{ padding:0 5px 10px; float:left; width:158px;}
+.zk_left ul li{ line-height:21px;}
+.zk_left ul li a{ font-size:11px;}
+.zk_right{ float:left; margin-left:33px; width:177px;}
+.zk_right dt{ padding-left:26px; background:url(http://sfr.tidebuy.com/images/newimages/spbg.jpg) no-repeat 0 3px; color:#cc0000;}
+.zk_right ul{ padding:5px 0;}
+.zk_right ul li{ line-height:26px; color:#000;}
+.zk_right dd img{ display:block; padding-bottom:5px;}
+#promotion {margin-left:-98px;width: 195px;}
+#promotion .zk_left{ width: 165px;}
+#promotion .zk_left ul li{border-bottom:1px dashed #dedede; }
+/*-banner-*/
+#ad_top{ margin-top:10px;}
+
+#ad{ margin-top:15px;}
+/*======================================================header-end================================================================*/
+
+/*=======================================================footer-start===========================================================*/
+.footer_warp, .fwdiv{ width:1000px; margin:10px auto 0; overflow:hidden;}
+/*Newsletter*/
+#Newsletter{ float:left; width:304px; border: solid 1px #CCC; border-left:none; border-right:none; height:184px;}
+#Newsletter p{ margin:5px 0; line-height:19px; color:#777; font-size:11px;}
+#Newsletter #txt_Emails{ color:#999999; width:200px; height:25px; line-height:25px; padding-left:9px;}
+.news_tit{ height:22px; line-height:22px;color:#000000;font-family: Verdana;font-size:14px;padding:16px 0 10px;}
+#btnIsDate{ padding-left:9px; width:200px; height:24px; border:solid 1px #a2a2a2; background:none; color:#999999;}
+input.subt{ margin-left:1px; width:62px; height:17px; border:none; cursor:pointer; background:none;}
+input.subt:hover{ background-position:left bottom;}
+.away{ border-bottom:1px solid #CCC; margin-top:3px; height:30px; line-height:30px; font-size:14px; font-weight:bold;}
+.away .t{  border-right:solid 1px #ccc; margin:0;}
+.away span{ padding-left:50px;}
+.away img{ margin-left:5px; vertical-align:middle;}
+
+/*Shopping*/
+#Shopping{ padding-left:22px; width:978px; border: solid 1px #ccc; border-left:none; border-right:none; height:184px;}
+#Shopping dl{padding:10px 20px 0 0; float:left; width:179px; }
+#Shopping dl dt{ line-height:26px; color:#000000;padding:5px 0px;font-family: Verdana;font-size:12px; font-weight:normal;}
+#Shopping dl.last{padding-right:0px;}
+#Shopping dl dd{  color:#666666; line-height:17px;}
+#Shopping dl dd a{color:#666666; font-size:11px;display:block;width:170px}
+#Shopping dl dd a:hover{color:#cc0000;}
+/*bottom*/ 
+#bottom{ padding:10px 0; overflow:hidden;zoom:1; margin-top:20px;}
+.bottom_tit{ margin-bottom:10px; height:30px; line-height:30px;color:#000; font-size:14px; font-family:Verdana;}
+.a_bgline{padding-left:8px; background:url("http://sfr.tidebuy.com/images/newimages/a_bgline.jpg") no-repeat scroll -1px 5px transparent}
+#bottom dl{ padding:4px 5px 0; float:left; width:240px;}
+#bottom dl d {background: url("http://sfr.tidebuy.com/images/newimages/tu.png") no-repeat scroll left 20px transparent;float:left;padding:0 5px; text-align:center; line-height:18px;}
+#bottom dl dt{ float:left;}
+#bottom dl dt img{ max-width:70px; max-height:90px; width:70px;}
+#bottom dl dd{  float:right; width:157px;  color:#666666; line-height:18px;}
+#bottom dl dd a{ font-size:11px;}
+#bottom dl dd span{ color:#000; font-weight:bold;}
+.compra{ margin-top:15px; float:left; margin-left:25px;}
+#tags{ text-align:center; color:#666666; height:26px; line-height:26px; clear:both;font-family:Verdana;}
+#tags span{ color:#000000;}
+#tags a{ padding:0 2px; font-size:11px;}
+#tags a:link{color:#666;}
+#tags a:hover{color:#ca1414;}
+#tags strong{ color:#000000;}
+#bnav{ height:26px; line-height:26px; text-align:center;padding-top:14px;}
+#bnav a{font-family:Verdana;color:#333; font-size:11px;padding:0 4px;}
+#bnav a:link{font-family:Verdana;color:#333;}
+#bnav a:hover{color:#cc0000;}
+#bnav a.cn:link{font-family:"微软雅黑";color:#666;}
+#bnav a.cn:hover{color:#ca1414;}
+#bnav span{color:#666;}
+#copy{ text-align:center;font-family:Verdana; font-size:11px;color:#666; margin:10px 0 50px;}
+#copy img{ display:block; margin:0 auto; padding:10px 0;}
+#link{padding-top:14px; text-align:center;}
+#link img{vertical-align:middle; padding:0 1px;}
+
+/*star*/
+.l_star0,.l_star05,.l_star10,.l_star15,.l_star20,.l_star25,.l_star30,.l_star35,.l_star40,.l_star45,.l_star50{display:-moz-inline-stack;display:inline-block;vertical-align:middle;zoom: 1;*display: inline; margin-top:2px; width:70px;height:12px;background:url(http://sfr.tidebuy.com/images/newimages/l_star.gif) no-repeat;overflow:hidden;}
+.l_star0{ background-position:left top;}
+.l_star05{background-position:left -12px;}
+.l_star10{background-position:left -24px;}
+.l_star15{background-position:left -36px;}
+.l_star20{background-position:left -48px;}
+.l_star25{background-position:left -60px;}
+.l_star30{background-position:left -72px;}
+.l_star35{background-position:left -84px;}
+.l_star40{background-position:left -96px;}
+.l_star45{background-position:left -108px;}
+.l_star50{background-position:left -120px;}
+/*freeshipping*/
+b.freeshipping{background: url("http://sfr.tidebuy.com/images/newimages/freeshiping.gif") no-repeat 32px 3px transparent;display:block; width:100%;height:100%; font-weight:normal;}
+span#mytotalprice{color:#cc0000}
+/*------------------------ tab top start -------------------------*/
+
+#back-top {	position: fixed;bottom: 100px;right:80px; z-index: 9999;}
+#back-top a {width: 21px;height: 79px;display: block;text-align: center;font: 16px/100% Arial, Helvetica, sans-serif;text-transform: uppercase;text-decoration: none;color: black;font-size: 12px;background: url(http://sfr.tidebuy.com/images/tab_top001.jpg) no-repeat scroll right center;overflow: hidden;text-indent: -999em;-webkit-transition: 1s;-moz-transition: 1s;transition: 1s;-webkit-box-shadow: 5px 1px 6px #333;-moz-box-shadow: 5px 1px 6px #333;box-shadow: 5px 1px 6px #777;}
+
+/*------------------------ tab top end -------------------------*/
+
+.huobi{ margin-left:2px;}
+/*=======================================================footer-end===========================================================*/
+
+
+/*======================================================== HOME banner  start  15-09-15  ==============================================================*/
+
+#banner {width:1000px;margin: 0 auto;height:450px;overflow: hidden; padding:0px 0 10px;}
+#slides {position: relative;}
+.slides_container {width: 1000px;height:450px;overflow: hidden;}
+#slides .prev{display:none;position:absolute;top:180px;left:0px;background: url(http://sfr.tidebuy.com/images/indexgoimg.png) no-repeat left top;width:30px; height:64px; }
+#slides .next{display:none;position:absolute;top:180px;left:974px;background: url(http://sfr.tidebuy.com/images/indexgoimg.png) no-repeat -30px top;width:30px; height:64px;}
+#slides:hover .prev{display:block;z-index:999;}
+#slides:hover .next{display:block;z-index:999;}
+#slides .prev:hover{background-position:left -64px;}
+#slides .next:hover{background-position: -30px -64px;}
+#slides .pagination {position: absolute;bottom: 15px;left:455px;z-index: 15;}
+#slides .pagination li {float: left;margin-right: 15px;}
+#slides .pagination li a {text-indent: -9999px;display: inline-block;background: url(http://sfr.tidebuy.com/images/default_icon.png) no-repeat -22px -3px;width: 12px;height: 12px;}
+#slides .pagination li.current a {background-position:-4px -3px;}
+#slides .slides_control {opacity:1;-webkit-transition: opacity .5s linear;-moz-transition: opacity .5s linear;-o-transition:opacity .5s linear;transition:opacity .5s linear;}
+#slides .slides_control img{ max-width:1000px; max-height:450px;}
+#slides .slides_control:hover {opacity:.7;filter:alpha(opacity=70)}
+#slides .showImg.hover img{-webkit-transition: -webkit-transform 4s linear;
+		-moz-transition: -moz-transform 4s linear;
+		-o-transition: -o-transform 4s linear;
+		transition: transform 4s linear;
+		-webkit-transform: scaleX(1) scaleY(1);
+		-moz-transform: scaleX(1) scaleY(1);
+		-ms-transform: scaleX(1) scaleY(1);
+		-o-transform: scaleX(1) scaleY(1);
+		transform: scaleX(1) scaleY(1);
+	    }
+#slides .showImg img{
+	-webkit-transform: scaleX(1.05) scaleY(1.05);
+    -moz-transform: scaleX(1.05) scaleY(1.05);
+    -ms-transform: scaleX(1.05) scaleY(1.05);
+    -o-transform: scaleX(1.05) scaleY(1.05);
+    transform: scaleX(1.05) scaleY(1.05);
+	
+	}
+
+/*======================================================== HOME banner  end  15-09-15  ==============================================================*/
+
+/*======================================================== HOME ==============================================================*/
+#content{width:1000px; margin:0 auto;}
+
+/*hot product*/
+.hot_Product{ float:left;  width:500px; border:solid 1px #ccc; border-right:none; border-left:none;padding-bottom:7px;margin-top: 10px;}
+.rbk{ border-left:solid 1px #ccc; padding-left:9px; width:490px;padding-bottom:7px;}
+.hot_tit h2{ height:26px; line-height:26px;color:#000000; font-size:15px; padding:10px 0; font-family:Verdana;font-weight:bold;}
+.hot_con{ overflow:hidden;zoom:1;}
+.hot_img{ float:left;  width:190px; position:relative;}
+.hot_img img{ display:block; max-width:190px; max-height:255px; width:190px;}
+.hot_img a{display:block;}
+.hot_pic{ position: absolute; left:0; top:197px; width:190px; height:40px; top:196px; background:#cc0000; text-align:center;color:#fff;}
+.hot_pic p{ line-height:20px; }
+.hot_pic span{ color:#fff;}
+.hot_con dl{ float:left; margin:0 0 5px 10px; width:300px;}
+.hot_con dl dt{ float:left;}
+.hot_con dl dt img{ float:left; max-width:113px; max-height:125px;}
+.hot_con dl dd{ float:left; padding-left:10px; width:127px; padding-top:10px;}
+.hot_con dd p{ padding-bottom:10px; line-height:17px; color:#333333;}
+.hot_con dd a{}
+.hot_con dd a:hover{ color:#cc0000;}
+.hot_con dd span{ color:#cc0000;}
+.hot_pic p a{ color:#fff;}
+.hot_pic p a:hover{ color:#fff;}
+.rbk dl{ width:290px;}
+.rbk dl dd{ width:115px;}
+#ad_bottom{ padding:10px 0;}
+#ad_bottom img{ display:block;}
+#tw_container{ float:left;}
+/*hot product end*/
+.top_selling1{ overflow: hidden; padding-bottom: 15px}
+.top_selling1 h2{height: 45px; color: #000;font-size: 16px;line-height: 45px; display: block;}
+.top_selling1 dl{ width:150px; float:left; margin:0 4px 0 10px;_margin:0 2px 0 5px; text-align:center;}
+.top_selling1 dl dt{ height:200px;}
+.top_selling1 dl dt img{  margin-left:2px; max-width:140px; max-height:200px; _width:140px; _height:200px;}
+.top_selling1 dl dd{ line-height:15px; overflow:hidden;}
+.top_selling1 dl dd a{ color:#000; display:block; height:45px;overflow:hidden;}
+.top_selling1 dl dd a:hover{ color:#ca1414;overflow:hidden;}
+.top_selling1 dl dd.price { line-height:18px; display:block;}
+
+.top_selling1 dl dd.price i.mp2{ color:#cc0000; display:inline; visibility:visible; padding-left:3px; font-weight:normal; font-style:normal;}
+.top_selling1 dl dd.price i.mp{ color:#333333; text-decoration:line-through; font-style:normal;}
+.top_selling1 dl span.fuhao,.top_selling1 dl span.huobi{ display:inline;}
+.top_selling1 dl dd.price i.mp .huobi {margin-left: 0;}
+
+.discount,.r_banner,.categories{ margin-top:10px;background:#FFF;}
+.discount{ height:264px;overflow: hidden;}
+.discount a{ margin-right:3px;}
+.discount a.last{ margin-right:0;}
+.discount *{  vertical-align:middle; float:left;}
+.discount .tb_2{ border-right:1px solid #CCCCCC;border-left:1px solid #CCCCCC;}
+.categories{ padding:10px 20px 60px; background:url(http://sfr.tidebuy.com/images/home/categories_bg.jpg) left top no-repeat;}
+.categories h3{ color:#000;  font-size:16px; display:block; padding-bottom:16px;}
+.categories div{ width:247px; height:154px; float:left; margin-bottom:10px;}
+.categories div .clear{ width:0; height:0;}
+.categories div img{ float:left; border:1px #ccc solid; padding:1px;}
+.categories div a{ }
+.categories div h2 { font-weight:bolder; float:left; padding-left:10px; line-height:18px; width:130px;}
+.categories div a.ca_tit{ color: #000;font-size: 14px;font-weight: bolder; float: left;padding-left: 10px;line-height: 18px; width: 130px;}
+.categories div ul{float:left; width:140px; line-height:18px; padding-left:10px;}
+.categories div ul li{ font-size:11px; }
+.categories div ul li a{  text-decoration:underline; font-weight:normal;}
+.categories{ background:none; padding:10px 0 0 5px;}
+.categories div ul{ width:130px;}
+.tendances{ width:1000px; margin:auto; text-align:center;}
+
+/*===================================================== HOME END ==============================================================*/
+
+/*===================================================Gallery=============================================================*/
+/*crumb*/
+#crumb {height: 33px;line-height: 33px;margin: 10px auto;width: 1000px;}
+#crumb dt h1 {display: inline;padding-left: 3px; font-size:11px;}
+#crumb dt{ float:left; color:#666666;}
+#crumb dt a:link{ color:#000000;}
+#crumb dt a:hover{ color:#cc0000;}
+#crumb dd{ float:right; color:#333333;}
+#crumb dd a{ color:#333; text-decoration:underline;}
+
+
+
+/*--------------------gallery_left----------------------*/
+#gallery_left{width:190px; margin-top:-5px;}
+.menu_tit,#left-menu h1{color:#000;font-family: Georgia;font-size: 20px;line-height:26px; border-bottom:solid 1px #999999; font-weight:normal;}
+/*left-menu*/
+#left-menu{padding-bottom:8px;}
+#left-menu dl.hasdd{}
+#left-menu dt{font-weight:bold; color:#000000;padding:5px 0px;}
+#left-menu dd{ line-height:22px;}
+#left-menu dd a{ font-size:11px; color:#000000;}
+#left-menu dd a:hover{ color:#cc0000; text-decoration:underline;}
+#amount{ width:114px; margin-top:6px;}
+/*Fabric*/
+.Fabric{ margin:0px; padding-bottom:10px; border-top:solid 1px #999999; padding-top:14px; line-height:16px;}
+.Fabric.theFirst {border-top:none;}
+.Fabric dt{cursor:pointer;font-family: Verdana; margin-bottom:10px; height:18px; line-height:18px; color:#000000; background:url(http://sfr.tidebuy.com/images/newimages/tu.png) no-repeat left 5px; padding-left:15px; }
+.Fabric dd{ padding:0px 0 0 5px; line-height:16px;color:#333333;overflow-x:hidden;overflow-y:auto;}
+.Fabric dd label{ font-size:11px;}
+.Fabric input{ margin-right:6px;}
+.ad_left{ padding-bottom:10px; border-bottom:solid 1px #999999;}
+.Products{ padding-bottom:10px; border-bottom:solid 1px #999999;}
+.Products dt{font-family: Verdana;line-height:27px; color:#000000;padding-top:10px; padding-left:15px; background:url(http://sfr.tidebuy.com/images/newimages/tu.png) no-repeat left 20px;}
+.Products dd{ padding:6px 0;}
+.Products dd img{ float:left; padding-right:5px;max-width: 100px;}
+.Products.cateGory dd img{ float:left; padding-right:5px;max-width: 70px;}
+.Products p{  color:#666666; line-height:16px;overflow: hidden; max-height:48px;}
+.Products span{ height:20px; line-height:20px; color:#cc0000;}
+.Products span.selfavorites{ height:16px;}
+.Products span.selfavoritesed{ height:16px;}
+.Products p a{ color:#666; line-height:22px; font-size:11px;}
+.gallery_result{margin-top: 20px;color:black;}
+.gallery_result h3{ font-size:12px; font-weight:normal; display:inline;}
+/*Wholesale*/
+.Wholesale{border-bottom:solid 1px #999999; margin-bottom:10px;}
+.Wholesale dt{ padding:12px 0 12px 15px; line-height:20px; color:#000000;background: url("http://sfr.tidebuy.com/images/newimages/tu.png") no-repeat scroll left 20px transparent;font-family: Verdana;}
+.Wholesale dd{color:#666666; line-height:20px;}
+.Wholesale dd a{padding-right:14px; float:left;}
+.Wholesale h2,.Products h2{ font-size:15px; display:inline; font-weight:normal; font-family:Georgia;}
+.Wholesale a:hover{ color:#cc0000; text-decoration:underline;}
+/*-ListLeft Price-*/
+    #demo-frame > div.demo { padding: 10px !important; }
+    .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default { border: none/*{borderColorDefault}*/; background: #fff/*{bgColorDefault}*/ url(http://sfr.tidebuy.com/images/newimages/dragbar_bg.gif)/*{bgImgUrlDefault}*/ 50%/*{bgDefaultXPos}*/ 50%/*{bgDefaultYPos}*/ repeat-x/*{bgDefaultRepeat}*/; font-weight: normal/*{fwDefault}*/; color: #555555/*{fcDefault}*/; }
+    .ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited { color: #555555/*{fcDefault}*/; text-decoration: none; }
+    .ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus { border:none/*{borderColorHover}*/; background: #fff/*{bgColorHover}*/ url(http://sfr.tidebuy.com/images/newimages/dragbarhover_bg.gif)/*{bgImgUrlHover}*/ 50%/*{bgHoverXPos}*/ 50%/*{bgHoverYPos}*/ repeat-x/*{bgHoverRepeat}*/; font-weight: normal/*{fwDefault}*/; color: #212121/*{fcHover}*/; }
+    .ui-state-hover a, .ui-state-hover a:hover { color: #212121/*{fcHover}*/; text-decoration: none; }
+    .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active { border: none/*{borderColorActive}*/; background: #ffffff/*{bgColorActive}*/ url(http://sfr.tidebuy.com/images/newimages/dragbarhover_bg.gif)/*{bgImgUrlActive}*/ 50%/*{bgActiveXPos}*/ 50%/*{bgActiveYPos}*/ repeat-x/*{bgActiveRepeat}*/; font-weight: normal/*{fwDefault}*/; color: #212121/*{fcActive}*/; }
+    .ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited { color: #212121/*{fcActive}*/; text-decoration: none; }
+    .ui-widget :active { outline: none; }
+    .ui-slider { position: relative; text-align: left; }
+    .ui-slider .ui-slider-handle { position: absolute; z-index: 2; width: 8px; height: 15px; cursor: default; }
+    .ui-slider .ui-slider-range { position: absolute; z-index: 1; font-size: .7em; display: block; border: 0; background-position: 0 -3px; }
+    .ui-slider-horizontal { height: .8em; }    
+    .ui-slider-horizontal .ui-slider-handle { top: -.3em; margin-left:0px; }
+    .ui-slider-horizontal .ui-slider-range { top: 0; height: 100%; }
+    .ui-slider-horizontal .ui-slider-range-min { left: 0; }
+    .ui-slider-horizontal .ui-slider-range-max { right: 0; }
+    .ui-slider-vertical { width: .8em; height: 100px; }
+    .ui-slider-vertical .ui-slider-handle { left: -.3em; margin-left: 0; margin-bottom: -.6em; }
+    .ui-slider-vertical .ui-slider-range { left: 0; width: 100%; }
+    .ui-slider-vertical .ui-slider-range-min { bottom: 0; }
+    .ui-slider-vertical .ui-slider-range-max { top: 0; }
+    .ui-widget {}
+    .ui-widget .ui-widget { font-size: 1em; }
+    .ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button { font-family:Tahoma,Verdana,Arial,sans-serif/*{ffDefault}*/; font-size: 1em; }
+    .ui-widget-content { width:96%;border: none/*{borderColorContent}*/; background: #ffffff/*{bgColorContent}*/ url(http://sfr.tidebuy.com/images/newimages/lineleft_bg.gif)/*{bgImgUrlContent}*/ 50%/*{bgContentXPos}*/ 50%/*{bgContentYPos}*/ repeat-x/*{bgContentRepeat}*/; color: #222222/*{fcContent}*/; }
+    .ui-widget-content a { color: #222222/*{fcContent}*/; }
+    .ui-widget-header { border:none; background: #fff/*{bgColorHeader}*/ url(http://sfr.tidebuy.com/images/newimages/lineright_bg.gif)/*{bgImgUrlHeader}*/ 50%/*{bgHeaderXPos}*/ 50%/*{bgHeaderYPos}*/ repeat-x/*{bgHeaderRepeat}*/; color: #222222/*{fcHeader}*/; font-weight: bold; }
+    .ui-widget-header a { color: #222222; }
+.slider-range-wrapper{ margin:0px; padding-bottom:10px; border-bottom:solid 1px #999999; padding-top:14px;}
+.slider-range-wrapper .prtit{ margin-bottom:15px; height:18px; line-height:18px; color:#000000; background:url(http://sfr.tidebuy.com/images/newimages/tu.png) no-repeat left 5px; padding-left:15px; font-size:12px;}
+.slider-range-wrapper .prtit span{ display:block; float:right; color:#666666; cursor:pointer;}
+#slider-range a{cursor:pointer;}
+.price-high,.price-low{ font-size:11px; color:#333; margin-top:6px;}
+.price-high{float:right;}
+.price-low{float:left;}
+
+/*--------------------gallery_right----------------------*/
+
+#gallery_right{ width:790px; overflow:hidden;}
+.gallery-right h1{display:inline;font-size:14px;color:#000;font-family:Georgia;font-weight:normal;line-height:20px}
+.activity2{margin-top:20px;}
+.activity2 a{display:block;color:#cc0000; text-decoration:underline;}
+.activity2 a.frahide{display:none;}
+.Sort{ margin:10px 0; height:30px; line-height:30px; color:#333333;} 
+.Sort a{ padding:0 5px;text-decoration:underline; font-size:11px;}
+.Sort a:hover{ text-decoration:none;}
+.Sort a:link{color:#000000; }
+
+.page{text-align:right; height:26px; line-height:15px;}
+.page a{ float:left; height:20px; line-height:20px; text-align:center; background-color:#fff;  margin-right:5px;padding:0px 8px;border:1px solid #CCC;}
+.page a:hover{ background-color:#dedede;}
+.page font{ float:left; padding:0 8px; height:20px; line-height:20px; text-align:center; font-weight:bold; color:#000; margin-right:5px;}
+.page input{ float:left; width:30px; height:22px; margin-right:5px;}
+.page input[type='button']{ width:auto; margin-left:10px; padding:0 5px;}
+.page .page_button{ margin-right:5px;}
+.page span{ float:left; background:none; border:0 none; line-height:20px;}
+.page div{ float:right; padding-bottom:15px;}
+.gallery_con{ float:left;}
+.gallery_con dl{ float:left;margin:0 10px 0 0; padding:10px 0; width:190px;}
+.gallery_con dl.dr{margin:0;}
+.gallery_con dl dd{height:80px;}
+.gallery_con dl dt{ text-align:center;height:260px;overflow:hidden;}
+.gallery_con dl dt a{ display:block;}
+.gallery_con dl dt.fl{ height:80px;}
+.gallery_con dl dt img{ max-width:190px; max-height:260px;_width:190px;}
+.gallery_con dd li{ height:20px; line-height:20px; text-align:center; color:#000000; overflow:hidden;}
+.gallery_con dd li a{ font-size:11px; color:#000;}
+.gallery_con dd li a:hover{ text-decoration:underline;}
+.gallery_con dd li b.mp{ color:#666666;margin-right:5px; text-decoration:line-through; font-weight:normal; }
+.gallery_con dd li strong{ font-weight:normal; color:#cc0000;}
+.gallery_con dd li span.tdu{margin-right:0px;}
+.gallery_con .selfavorites,.gallery_con .selfavoritesed{ display:none;}
+
+
+.gallery_con.square dl dt img{max-width:190px; max-height:190px;}
+.gallery_con.square dl dt{height: 190px;}
+
+
+
+.gallery_con2{ float:left;}
+.gallery_con2 dl{ float:left;margin:0 50px 0 0; padding:10px 0; width:230px;}
+.gallery_con2 dl.dr{margin:0;}
+.gallery_con2 dl dd{height:80px;}
+.gallery_con2 dl dt{ text-align:center;height:312px;overflow:hidden;}
+.gallery_con2 dl dt a{ display:block;}
+.gallery_con2 dl dt.fl{ height:80px;}
+.gallery_con2 dl dt img{ max-width:230px; max-height:312px;_width:230px;}
+.gallery_con2 dd li{ height:20px; line-height:20px; text-align:center; color:#000000; overflow:hidden;}
+.gallery_con2 dd li a{ font-size:11px; color:#000;}
+.gallery_con2 dd li a:hover{ text-decoration:underline;}
+.gallery_con2 dd li span{ color:#666666;margin-right:16px; text-decoration:line-through;}
+.gallery_con2 dd li strong{ font-weight:normal; color:#cc0000;}
+.gallery_con2 dd li span.tdu{margin-right:0px;}
+.gallery_con2 b.freeshipping{ background-position:61px 4px;}
+.showmore{ height:28px; text-align:center; clear:both; width:790px;}
+.show{ width:254px; height:28px; background:url(http://sfr.tidebuy.com/images/newimages/showmore.png) no-repeat; border:none; cursor:pointer;}
+.category{ padding:10px; border-top:solid 1px #ccc;}
+.category dt span{ display:block; float: left; background:url(http://sfr.tidebuy.com/images/newimages/tu.png) no-repeat 5px; padding-left:25px; color:#000000;}
+.category dt span h3{ display:inline; font-weight:normal; font-size:14px;}
+.category dt a{ display:block; float:right; font-size:12px;}
+.category dd{ clear:both; line-height:20px; color:#666666; height:18px; overflow:hidden;}
+.sale05off,.sale10off,.sale15off,.sale20off,.sale25off,.sale30off,.sale35off,.sale40off,.sale45off,.sale50off,.sale55off,.sale60off,.sale65off,.sale70off,.sale75off,.sale80off,.sale85off,.sale90off,.sale95off{height: 80px;position: absolute;right: 0;top: 0;width: 80px;}
+.sale05off{background: url(http://sfr.tidebuy.com/images/hot_sale_05.png) no-repeat 0% 0%;}
+.sale10off{background: url(http://sfr.tidebuy.com/images/hot_sale_10.png) no-repeat 0% 0%;}
+.sale15off{background: url(http://sfr.tidebuy.com/images/hot_sale_15.png) no-repeat 0% 0%;}
+.sale20off{background: url(http://sfr.tidebuy.com/images/hot_sale_20.png) no-repeat 0% 0%;}
+.sale25off{background: url(http://sfr.tidebuy.com/images/hot_sale_25.png) no-repeat 0% 0%;}
+.sale30off{background: url(http://sfr.tidebuy.com/images/hot_sale_30.png) no-repeat 0% 0%;}
+.sale35off{background: url(http://sfr.tidebuy.com/images/hot_sale_35.png) no-repeat 0% 0%;}
+.sale40off{background: url(http://sfr.tidebuy.com/images/hot_sale_40.png) no-repeat 0% 0%;}
+.sale45off{background: url(http://sfr.tidebuy.com/images/hot_sale_45.png) no-repeat 0% 0%;}
+.sale50off{background: url(http://sfr.tidebuy.com/images/hot_sale_50.png) no-repeat 0% 0%;}
+.sale55off{background: url(http://sfr.tidebuy.com/images/hot_sale_55.png) no-repeat 0% 0%;}
+.sale60off{background: url(http://sfr.tidebuy.com/images/hot_sale_60.png) no-repeat 0% 0%;}
+.sale65off{background: url(http://sfr.tidebuy.com/images/hot_sale_65.png) no-repeat 0% 0%;}
+.sale70off{background: url(http://sfr.tidebuy.com/images/hot_sale_70.png) no-repeat 0% 0%;}
+.sale75off{background: url(http://sfr.tidebuy.com/images/hot_sale_75.png) no-repeat 0% 0%;}
+.sale80off{background: url(http://sfr.tidebuy.com/images/hot_sale_80.png) no-repeat 0% 0%;}
+.sale85off{background: url(http://sfr.tidebuy.com/images/hot_sale_85.png) no-repeat 0% 0%;}
+.sale90off{background: url(http://sfr.tidebuy.com/images/hot_sale_90.png) no-repeat 0% 0%;}
+.sale95off{background: url(http://sfr.tidebuy.com/images/hot_sale_95.png) no-repeat 0% 0%;}
+/*--------------------Category----------------------*/
+.g1_title{background: url(http://sfr.tidebuy.com/images/newimages/tu.png) no-repeat scroll left 12px transparent;border-bottom:1px solid #999; width:100%;text-align:right;padding-left:16px; height:30px; line-height:30px;width:773px; margin-top:14px;}     
+.g1_title b{ float:left; font-size:17px;}
+.g1_title h3{float:left;font-size:16px; color:#000; font-weight:normal;}
+/*=================================================gallery end=======================================================*/
+/*=============estidebuy_time================*/
+.tk_banner2 {margin: 0px auto; width:1000px; position:relative;margin-top:10px;}
+.tk_banner2 .banner2link{position:absolute; display:block; background:none;height:18px; width:140px; left:233px; top:50px;}
+.tk_banner2 .bl1{ left:135px;}
+.tk_banner2 .bl2{ left:285px;}
+.tk_banner2 .bl3{ left:435px;}
+.tk_banner2 .time { margin:0px auto;width: 1000px; height:80px;padding-top:3px;}
+.tk_banner2 .time1 { margin:0px auto;width: 1000px; height:80px;}
+.tk_banner2 span.time-d {margin-left: 786px;}
+.tk_banner2 span {margin-top: 9px;text-align: center;}
+.time_classall810 span {margin-top: 15px;text-align: center;width: 39px;}
+.time span {color: #FFF;display: inline-block;font-size: 25px;font-weight: normal;height: 28px;vertical-align: middle;width: 40px;}
+.time1 span {color: white;display: inline-block;font-size: 25px;font-weight: normal;height: 28px;vertical-align: middle;width: 40px;}
+.tk_banner2 span.time-h {margin-left: 13px;}
+.time_classall810 .time-h {margin-left: 7px;margin-right: 16px;}
+.tk_banner2 span.time-m {margin-left: -5px;}
+.time_classall810 .time-m {margin-left: 4px;margin-right: 9px;}
+.tk_banner2 span.time-s {margin-left:3px;}
+.time_classall810 .time-s {margin-left: -3px;margin-right: 0;}
+.muchover{border-left:1px solid #CCCCCC;line-height:28px;margin-bottom:30px;margin-left:110px;padding-left:10px;}
+.muchover li span{ display:inline-block; width:250px; color:#000; font-weight:bold;}
+.Measuring{ height:auto;}
+input.makeareview{ margin-left: 5px;width: 160px;height: 25px;background: url(http://sfr.tidebuy.com/images/newimages/makeareview.jpg) no-repeat left top;border: none;color: #fff;}
+input.makeareview:hover {background-position: left bottom;}
+/*=============Fr_Email================*/
+#em_friend{background:url('http://sfr.tidebuy.com/images/email_f.jpg') no-repeat 0 2px;float: left; width: 104px; height:21px; padding-top:3px;margin-left:5px;cursor:pointer}
+#emailBox{text-align:left;width:500px;height:320px;border:5px solid #ccc;position:fixed;left:25%;top:5%;background-color:#fff;z-index:6666;display:none;border-radius:5px;box-shadow:2px 3px 8px #666}
+#emailBox td{vertical-align:top;padding:0}
+#emailBox > table{margin-left:12px;margin-top:14px}
+.emtop{height:39px;border-bottom:1px dotted #000;line-height:39px;padding-left:40px;background:url("http://sfr.tidebuy.com/images/newimages/tu.png") no-repeat scroll 19px center;font-size:15px;font-weight:bold;position:relative;}
+.emtop span{width:18px;height:18px;background:url('http://sfr.tidebuy.com/images/yc1.jpg') no-repeat 0 0;position:absolute;top:2px;right:3px;display:block;cursor:pointer}
+.em_input{width:255px;height:20px;}
+.em_text{width:255px;height:55px}
+.p_em{margin-top:4px}
+.subx_em{border:0;width:74px;height:23px;line-height:23px;background-color:#cc0000;font-size:14px;color:#fff;cursor:pointer}
+
+/*===========================zhuanti======================================*/
+#Nouvelle {margin:0; }
+#Nouvelle .Nouvelle {width:1000px;margin-left:auto;margin-right:auto;}
+#Nouvelle .Nouvelle1{ width:100%;background-color:#e7e7e7;} 
+#Nouvelle .banner {position: relative;}
+#Nouvelle .banner div.let {left: -392px;position: absolute;top: 0;}
+#Nouvelle .banner div.ret {position: absolute;right: -392px; top: 0;}
+#Nouvelle .btn-left {background:url(http://sfr.tidebuy.com/images/s/new2013/btnlr.jpg) repeat scroll 0px 0 transparent; width:41px; height:472px; float:left;}
+#Nouvelle .btn-right {background:url(http://sfr.tidebuy.com/images/s/new2013/btnlr.jpg) repeat scroll 40px 0 transparent; width:41px; height:472px; float:right;}
+#Nouvelle .ptlist { overflow:hidden}
+#Nouvelle .ptlist img {margin-right:16px;}
+#Nouvelle .connet {margin-top:30px;}
+#Nouvelle .votre_top{ background:url(http://sfr.tidebuy.com/images/s/new2013/votrestyle_02.jpg) no-repeat center top;}
+#Nouvelle .votre_banner{ width:1000px; margin:auto; position:relative}
+#Nouvelle .votre_banner dl{ position:absolute; right:5px;bottom:85px;}
+#Nouvelle .votre_cross{ width:1000px; margin:auto; margin-top:5px;}
+#Nouvelle .votre_topprod{ width:1000px; margin:auto; position:relative; }
+#Nouvelle .votre_topprodright{ float:right; margin-right:10px;}
+#Nouvelle .topprePlay{width:930px;overflow:hidden;  margin-left:40px;position:relative}
+#Nouvelle .votre_product{list-style:none;padding:0; position:relative; left:0; top:0;}
+#Nouvelle .votre_product dl{ height:473px; width:318px; float:left;}
+#Nouvelle .votre_product dl dt{ width:289px; height:473px; overflow:hidden;}
+#Nouvelle .votre_product dl dt img{width:289px;}
+#Nouvelle .votre_leftbtn{ width:28px; height:60px;position:absolute;left:0px; top:190px;background:url(http://sfr.tidebuy.com/images/s/new2013/leftbtn.jpg) no-repeat; cursor:pointer;}
+#Nouvelle .votre_rightbtn{width:28px; height:60px;position:absolute;top:190px;right:0px; display:block;background:url(http://sfr.tidebuy.com/images/s/new2013/rightbtn.jpg) no-repeat;cursor:pointer;}
+
+/*======================newtag===========================================================*/
+.NewTag{ background:url(http://sfr.tidebuy.com/images/newtag/newtag_03.jpg) repeat-x 0 center #f1f0eb; border:1px solid #dadada; padding-top:30px; padding-left:45px; position:relative;z-index:100; padding-bottom:20px; left:0; top:0; min-height:35px;}
+.NewTag .TagLogo{ position:absolute; background:url(http://sfr.tidebuy.com/images/newtag/newtagloge.png) no-repeat; width:48px; height:114px; top:-16px; left:-13px; z-index:1;}
+.NewTag .TagLogo_font{position:absolute;left: 44px;top:4px;font-size: 15px;font-weight: bold;} 
+.NewTag .NewFabric{ width:auto; float:left; height:24px; border:1px solid #ccc; position:relative; margin-right:6px; margin-bottom:7px;}
+.NewTag .NewFabric dl{height:24px;width:auto; background:url(http://sfr.tidebuy.com/images/newtag/newtag_06.jpg) repeat-x;}
+.NewTag .NewFabric dl dt{width:auto;height:24px; cursor: pointer;}
+.NewTag .NewFabric dl dt span{ display:inline-block; height:24px; line-height:24px; vertical-align:top;padding:0 10px;white-space:nowrap; }
+.NewTag .NewFabric dl dt span.tag_btn{ height:24px; width:28px;background:url(http://sfr.tidebuy.com/images/newtag/newtag_08.jpg) no-repeat; padding:0;}
+.NewTag .NewFabric dl dd{ display:none; width:740px; position:absolute; background:#fff; padding-top:15px; border:2px solid #ccc; z-index:10; top:35px; background:#fcfbf9; padding-bottom:10px; padding-left:10px;}
+.NewTag .NewFabric dl dd span.Jiantou{ width:24px; height:17px; background:url(http://sfr.tidebuy.com/images/newtag/jiantou.png) no-repeat; display:block; position:absolute; top:-17px; left:31px;}
+.NewTag .NewFabric dl dd li{ float:left; margin-bottom:15px; width:123px; text-align:left; margin-bottom:10px; border-bottom:1px dashed #ccc;}
+.NewTag .NewFabric dl dd .New_FabricePrice li{ width:120px;}
+.NewTag .NewFabric dl dd li a{background:url(http://sfr.tidebuy.com/images/newtag/afterclick.png) no-repeat 0 5px;color: #333;cursor: pointer;padding: 1px 0 1px 15px;display: inline-block;height: 34px;line-height: 17px; overflow:hidden;}
+.NewTag .NewFabric dl dd li .NewFabric_Img a{background:none;padding:0;height: 130px;}
+.NewTag .NewFabric dl dd .New_FabricePrice li a{ background:none;}
+.NewTag .NewFabric dl dd li a.enabled.selected{background:url(http://sfr.tidebuy.com/images/newtag/beforeclick.png) no-repeat 0 5px;color: #666;}
+.NewTag .NewFabric dl dd li div{ width:100px; height:130px;}
+.NewTag .NewFabric dl dd li div img{ width:100px; height:130px;}
+.NewTag #select_gallery{ clear:both;}
+.NewTag .select_gallery span{ padding:0 10px; height:20px; line-height:20px; border:1px solid #ccc; display:inline-block; color:#f00; margin-left:10px; margin-bottom:10px; position:relative;}
+.NewTag .select_gallery a{background: url(http://sfr.tidebuy.com/images/newtag/taggouxuan.png) no-repeat scroll left top transparent;height: 15px;width: 15px;margin-left: 4px;cursor: pointer;position:absolute;top: -11px;right: -8px;}
+.NewTag .NewFabric dl dd .NewFabricePriceSD input[type="button"]{ width:30px; height:20px; background:url(http://sfr.tidebuy.com/images/newtag/tagpribtn.png) no-repeat; border:none;text-transform:capitalize; text-indent:-9999px; cursor:pointer;}
+.NewTag .NewFabric dl dd .NewFabricePriceSD input[type="text"]{ width:38px; height:21px; border:none; text-align:center; line-height:21px;background:url(http://sfr.tidebuy.com/images/newtag/tagpritext.png) no-repeat; margin-left:5px; padding-left:0;  outline:none;}
+
+#iph5 .iph5_content .iph5_pro .iph5_pro1 dl dt .iph5_protext .iph5_proval{ width:205px;}
+#iph5{ width:100%;}
+#iph5 .iph5_content{ width:100%; background:#f4f5f6;}
+#iph5 .iph5_content .iph5_banner{ position:relative; width:1000px; margin:auto;}
+#iph5 .iph5_content .iph5_banner .iph5_them{ width:650px; height:130px; position:absolute; font-size:24px; color:#000; left:298px; top:30px; font-family:arial;}
+#iph5 .iph5_content .iph5_banner .iph5_them span{ font-size:45px}
+#iph5 .iph5_content .iph5_banner .iph5_text{ font-size:14px; color:#666; font-family:Tahoma, Geneva, sans-serif; width:650px; height:110px; left:298px; top:166px; position:absolute;}
+#iph5 .iph5_content .iph5_pro{ width:1000px; margin:auto; background:url(http://sfr.tidebuy.com/images/s/0327/bg_03.jpg) no-repeat center top; height:1070px;}
+#iph5 .iph5_content .iph5_pro>h1{font-family:AvantGarde Bk BT;font-size:41px; font-weight:normal;color:#000; padding-left:85px; line-height:74px;}
+#iph5 .iph5_content .iph5_pro .iph5_pro1{ width:883px; margin:auto; border-top: solid 1px #CCC; margin-bottom:10px; padding-bottom:45px;}
+#iph5 .iph5_content .iph5_pro .iph5_pro1>p{font-family:AvantGarde Bk BT; font-size:20px; color:#646464; font-weight:500;padding-left:20px; line-height:45px;}
+#iph5 .iph5_content .iph5_pro .iph5_pro1 dl{ width:402px; float:left; margin:0 18px;}
+#iph5 .iph5_content .iph5_pro .iph5_pro1 dl dt{width:402px; background:url(http://sfr.tidebuy.com/images/s/0327/probg.png) no-repeat; height:175px; padding:10px;}
+#iph5 .iph5_content .iph5_pro .iph5_pro1 dl dt>div{ float:left;}
+#iph5 .iph5_content .iph5_pro .iph5_pro1 dl dt .iph5_proimg{ width:147px;}
+#iph5 .iph5_content .iph5_pro .iph5_pro1 dl dt .iph5_proimg img{ max-width:147px;}
+#iph5 .iph5_content .iph5_pro .iph5_pro1 dl dt .iph5_protext{ padding-left:20px; width:231px; padding-top:10px;}
+#iph5 .iph5_content .iph5_pro .iph5_pro1 dl dt .iph5_protext b{ font-size:20px; color:#323232;}
+#iph5 .iph5_content .iph5_pro .iph5_pro1 dl dt .iph5_protext .iph5_proval{ font-size:15px; color:#464646; display:block; padding-top:8px; line-height:20px; height:80px; overflow:hidden;}
+#iph5 .iph5_content .iph5_pro .iph5_pro1 dl dd{ padding-left:10px;}
+#iph5 .iph5_content .iph5_pro .iph5_pro1 dl dd a{ color:#F00; text-decoration:underline; font-size:14px;}
+
+.map_tit{ padding-right:10px;  height:36px; line-height:36px;  border-bottom:solid 1px #7f7f7f;}
+.map_tit h2{ float:left; display:block; font-size:20px; color:#000000;}
+.map_tit a{ float:right; display:block; color:#666666; }
+#wrapper .ath_map dl{ min-height:240px; _height:240px;}
+.map_con ul{ line-height:20px; width:900px; padding:5px 0;}
+#wrapper .ath_map2 ul li{width: 436px;float: left;padding: 0px 5px;overflow: hidden;height: 28px;line-height: 32px;}
+.ath_map2 ul{padding:5px 0 10px; float:left;}
+.map_con dl{ float:left; margin-right:30px; width:220px;min-height:300px;}
+.map_con dt{ margin-top:10px; height:25px; line-height:25px; color:#333333; font-weight:bold;}
+.map_con dd{ height:auto!important; height:200px; line-height:20px;}
+.map_con dd a{ color:#454545;}
+.map_con dd li{ line-height:20px;}
+.map_con dd li a{ color:#666666; text-decoration:underline; font-size:11px;}
+.map_con2 { margin-top: 10px;}
+.map_con2 dl{ float:left; margin-right:30px; width:220px; line-height: 22px;}
+.Directory{ height:35px; line-height:35px; font-size:18px; color:#000000;}
+.Directory a{ padding:0 5px; color:#000000; text-decoration:underline;}
+.Directory_con dl{ float:left; margin-right:30px; width:220px;}
+.Directory_con dd{ height:auto!important; height:200px; min-height:200px;}
+.Directory_con dd li{ line-height:20px; color:#000000;}
+.newproduct li {color: #000000;line-height: 30px; float: left;margin-right: 30px;width: 220px; height:30px; overflow:hidden;}
+.bar_con{ float:right; height:30px; line-height:30px;}
+.bar_con a{ padding:0 3px; font-weight:bold;}
+.crumb{ height:30px; line-height:30px;}
+.crumb a{ padding:0 5px;}
+#big4{ margin:0 auto; width:960px; overflow:hidden;zoom:1;}
+.bk{ margin:10px 0; border: solid 1px #bdbdbd;}
+.PRODUCPS{ padding-left:16px; margin:2px; width:940px; height:31px; line-height:31px; background:#c52330; font-size:20px; color:#fff; }
+.PRODUCPS span{ font-size:11px;}
+.PRODUCPS_con{ padding:0px 10px 20px;}
+.PRODUCPS_con dl{ margin:0 20px; float:left; width:170px;}
+.PRODUCPS_con dl dt{ height:34px; line-height:34px;font-size:14px; color:#c4222f;}
+.PRODUCPS_con dl dt a{ color:#c4222f;}
+.PRODUCPS_con dd { line-height:20px;padding-left:4px;}
+.PRODUCPS_con dd  a{ font-size:11px; color:#594e4e; text-decoration:underline;}
+.PRODUCPS_con dd  a:hover{color:#cc0000;}
+.SELLING_con{  padding:20px 0; overflow:hidden;zoom:1; }
+.SELLING_con ul li{ float:left; margin:0 18px; width:154px;}
+.SELLING_con ul li span{ display:block; color:#020202; text-align:center; height:20px; line-height:20px;}
+.SELLING_con ul li .pric{ color:#c4222f; font-size:11px;}
+br{clear:both;}
+.zt{ width:960px;}
+.mt10p{ margin-top:10px;}
+#dl_dress_6548{margin-bottom: 10px;}
+#dl_dress_1097{margin-bottom: 53px;}
+#dl_dress_504{margin-bottom: 60px;}
+.newproduct dd{height:20px; line-height:20px; float:left; width:245px;}
+.Navigation {min-height: 30px;line-height: 30px;padding: 0;margin: 0;border: 0;height: 30px;margin:0px auto;text-align:left;width:1000px;}
+/*-------------------------列表页描述----------------------------------*/
+.tdv_wcon dl dt h1{ font-size:25px; font-family: Georgia;}
+/*---------------------------My favorites-----------------------------------*/
+div.favorites_tit{ color:#FFF; height:27px;line-height:27px; font-size:14px; background:url(http://sfr.tidebuy.com/images/favorites/tit_bg.jpg) no-repeat; width:230px; text-align:center; margin-bottom:5px;}
+.favo_tag span{ margin-right:20px; display:inline-block; max-width:180px; overflow:hidden; vertical-align:bottom;}
+.favo_tag input[type='text']{ height:20px; line-height:20px; font-size:12px; width:100px;}
+.favo_tag input[type='button']{ height:20px; line-height:20px; font-size:12px;color:#000; border:medium none; cursor:pointer;}
+.favo_tag .toutBtn{ background:url(images/tout.jpg) no-repeat; height:21px; width:106px;}
+.favorites_tag .m_tit{ margin-left:0px;}
+.favorites_tag .inbox{ margin-left:0px;}	
+.favorites_liketop .sale05off,.sale10off,.favorites_liketop .sale15off,.favorites_liketop .sale20off,.favorites_liketop .sale25off,.favorites_liketop .sale30off,.favorites_liketop .sale35off,.favorites_liketop .sale40off,.favorites_liketop .sale45off,.favorites_liketop .sale50off,.favorites_liketop .sale55off,.favorites_liketop .sale60off,.favorites_liketop .sale65off,.favorites_liketop .sale70off,.favorites_liketop .sale75off,.favorites_liketop .sale80off,.favorites_liketop .sale85off,.favorites_liketop .sale90off,.favorites_liketop .sale95off{height: 60px;position: absolute;right: 0;top: 0;width: 60px;}
+.favorites_liketop .sale05off{background: url(http://sfr.tidebuy.com/images/favorites/hot_sale_05.png) no-repeat 0% 0%;}
+.favorites_liketop .sale10off{background: url(http://sfr.tidebuy.com/images/favorites/hot_sale_10.png) no-repeat 0% 0%;}
+.favorites_liketop .sale15off{background: url(http://sfr.tidebuy.com/images/favorites/hot_sale_15.png) no-repeat 0% 0%;}
+.favorites_liketop .sale20off{background: url(http://sfr.tidebuy.com/images/favorites/hot_sale_20.png) no-repeat 0% 0%;}
+.favorites_liketop .sale25off{background: url(http://sfr.tidebuy.com/images/favorites/hot_sale_25.png) no-repeat 0% 0%;}
+.favorites_liketop .sale30off{background: url(http://sfr.tidebuy.com/images/favorites/hot_sale_30.png) no-repeat 0% 0%;}
+.favorites_liketop .sale35off{background: url(http://sfr.tidebuy.com/images/favorites/hot_sale_35.png) no-repeat 0% 0%;}
+.favorites_liketop .sale40off{background: url(http://sfr.tidebuy.com/images/favorites/hot_sale_40.png) no-repeat 0% 0%;}
+.favorites_liketop .sale45off{background: url(http://sfr.tidebuy.com/images/favorites/hot_sale_45.png) no-repeat 0% 0%;}
+.favorites_liketop .sale50off{background: url(http://sfr.tidebuy.com/images/favorites/hot_sale_50.png) no-repeat 0% 0%;}
+.favorites_liketop .sale55off{background: url(http://sfr.tidebuy.com/images/favorites/hot_sale_55.png) no-repeat 0% 0%;}
+.favorites_liketop .sale60off{background: url(http://sfr.tidebuy.com/images/favorites/hot_sale_60.png) no-repeat 0% 0%;}
+.favorites_liketop .sale65off{background: url(http://sfr.tidebuy.com/images/favorites/hot_sale_65.png) no-repeat 0% 0%;}
+.favorites_liketop .sale70off{background: url(http://sfr.tidebuy.com/images/favorites/hot_sale_70.png) no-repeat 0% 0%;}
+.favorites_liketop .sale75off{background: url(http://sfr.tidebuy.com/images/favorites/hot_sale_75.png) no-repeat 0% 0%;}
+.favorites_liketop .sale80off{background: url(http://sfr.tidebuy.com/images/favorites/hot_sale_80.png) no-repeat 0% 0%;}
+.favorites_liketop .sale85off{background: url(http://sfr.tidebuy.com/images/favorites/hot_sale_85.png) no-repeat 0% 0%;}
+.favorites_liketop .sale90off{background: url(http://sfr.tidebuy.com/images/favorites/hot_sale_90.png) no-repeat 0% 0%;}
+.favorites_liketop .sale95off{background: url(http://sfr.tidebuy.com/images/favorites/hot_sale_95.png) no-repeat 0% 0%;}
+.favorites_list{ padding-left:10px; padding-top:10px; border-bottom:1px solid #000; margin-bottom:20px;}
+.favo_tag{ padding:10px;}
+.favorites_TheLis{ width:205px; height:375px; float:left; margin-right:25px;}
+.favorites_TheLis .favorites_check{ float:left; margin-top:100px;}
+.favorites_TheLis dl{ width:175px; float:left;}
+.favorites_TheLis dl dd{ width:175px; height:235px; overflow:hidden; position:relative;}
+.favorites_TheLis dl dd img{ margin:auto; max-width:175px;}
+.favorites_TheLis dl dt{ width:175px;}
+.favorites_TheLis dl dt>span{ display:block;}
+.favorites_TheLis dl dt .favorites_dname{color: Black;display: block;height: 15px;overflow: hidden; line-height:15px;}
+.favorites_TheLis .favorites_p{font-size: 11px;color: #ff4311;line-height: 20px;height: 22px;}
+.favorites_TheLis .favorites_time{ font-size:12px; color:#656565;}
+.favorites_TheLis .favorites_delete a{ text-decoration:underline; font-size:12px; color:#333;}
+.favorites_TheLis .favorites_pri{ font-size:14px; color:#D30000;}
+.favorites_pro{ margin-top:20px}
+.favorites_pro select{ color:#000;}
+.favorites_pro .page .favorites_sub{ width:81px; height:21px; border:none; background:url(http://sfr.tidebuy.com/images/favorites/images/sum_03.jpg) no-repeat; margin-left:20px;}
+.favorites_liketop .favorites_lipro{ height:286px; width:680px; overflow:hidden; position:relative;}
+.favorites_liketop{ padding:10px; border:1px #ddd solid;}
+.favorites_liketop .favorites_goli{ position:absolute; left:0; top:0; width:680px;}
+.favorites_liketop .favorites_thelike{ position:relative; margin:auto; width:680px;}
+.favorites_liketop .favorites_thelike>span{display:block; position:absolute; height:38px; width:24px;top:90px; cursor:pointer;}
+.favorites_liketop .favorites_thelike .favorites_left{ background:url(http://sfr.tidebuy.com/images/favorites/leftBtn.png) no-repeat; left:-18px;}
+.favorites_liketop .favorites_thelike .favorites_right{ background:url(http://sfr.tidebuy.com/images/favorites/rightBtn.png) no-repeat; right:-18px;}
+.favorites_liketop .favorites_tit{ color:#000; font-weight:bold; line-height:40px;}
+.favorites_liketop dl{width:128px; float:left; margin-left:7px;}
+.favorites_liketop dl dd{ width:128px; height:195px; overflow:hidden; position:relative;}
+.favorites_liketop dl dd img{ margin:auto; max-width:128px;}
+.favorites_liketop dl dt{ width:128px;}
+.favorites_liketop dl dt>span{ display:block;}
+.favorites_liketop .favorites_span3{ height:20px;}
+.favorites_liketop dl dt .favorites_dname{color: Black;display: block;height: 15px;overflow: hidden; line-height:15px;}
+.favorites_liketop .favorites_p{font-size: 11px;color: #ff4311;line-height: 20px;height: 22px;}
+.favorites_liketop .favorites_pri{ font-size:14px; color:#D30000;}
+.selfavorites{ background:url(http://sfr.tidebuy.com/images/favorites/fav.png) no-repeat right top; height:16px; display:block; float:right; cursor:pointer;}
+.selfavorites:hover{ background-position:right -16px;}
+.selfavoritesed{background:url(http://sfr.tidebuy.com/images/favorites/fav.png) no-repeat right -16px; height:16px; display:block; float:right; width:20px; cursor:pointer;}
+.unlogin .favorites_list{ padding-left:30px;}
+.unlogin .favorites_thelike{ width:815px;}
+.unlogin .favorites_lipro{ width:815px;}
+.unlogin .favorites_goli{ width:815px;}	
+.favo_login{ height:36px; line-height:36px; background:url(http://sfr.tidebuy.com/images/favorites/favo_login.jpg) repeat-x; padding-left:30px; border:1px solid #ccc; margin-bottom:10px;}
+.favo_login a:link{ color:#f00; text-decoration:underline;}
+.favo_login a{ color:#f00;}
+.favo_login span{color:#f00; margin-left:30px;}
+.CliMyFavorites{ float:left; margin-top:30px; padding:0 5px;}
+.CliMyFavorites a{ height:16px; background:url(http://sfr.tidebuy.com/images/favorites/fav.png) no-repeat left -16px; padding-left:25px; display:block;}
+.Submit_left .selfavorites{ background:url(http://sfr.tidebuy.com/images/favorites/fav.png) no-repeat left top; padding-left: 30px; margin: 20px 0;height: 16px;line-height: 16px; cursor:pointer;}
+.Submit_left .selfavorites:hover{ background-position:left -16px; padding-left: 30px;}
+.Submit_left .selfavoritesed{background:url(http://sfr.tidebuy.com/images/favorites/fav.png) no-repeat left -16px;  padding-left: 30px; margin: 20px 0;height: 16px;line-height: 16px; cursor:pointer;}
+/*dress*/
+	.dress h2{ line-height:30px;color: #000;font-family: Georgia;font-size: 16px;}
+    dd.keyword>div {margin-bottom: 10px;width: 180px;}
+    dd.keyword span {text-indent: -10000px;width: 0;height: 0;}
+    dd.keyword span i {display: inline-block;width: 70px;height: 14px;margin: 0;background: url(http://sfr.tidebuy.com/images/star_sprite.png) no-repeat 0 2px;_background: 0;}
+    dd.keyword .rt {width: 0;height: 0;text-indent: -10000px;visibility: hidden;display: none;}
+    .keyword {padding: 5px 0 10px 0;line-height: 18px;}
+   .ruputrestock{position: absolute;width: 330px;height: 95px;z-index: 200;left: 0;top: 40%;background: url(http://sfr.tidebuy.com/images/200-301.png) no-repeat scroll 0 0;}
+   .addtocart_btnstock{background: url(http://sfr.tidebuy.com/images/btnstock.png) no-repeat 0px 0px;cursor: pointer;border: none;width: 150px;height: 41px;float: left;margin-top: 7px;margin-left: 5px;}
+   .buyBtnstock{margin-top: 6px;float: right;width: 115px;height: 41px;background: url(http://sfr.tidebuy.com/images/newimages/buynow_btn2.jpg) repeat-y scroll left 123px;border: none;cursor: pointer;}
+
+
+.Descr table { border-collapse: collapse}
+.Descr table th,#zzjs_nav1 .Descr table td {border: 1px solid #ddd;text-align: center}
+.Descr thead {background-color: #f0f0f0;font-weight: bold}
+.Descr tbody tr:nth-child(2n+2) {background-color: #f9f9f9}
+.Description table { width: 830px; margin-bottom: 15px;}
+
+
+/* questwords  page  search none  */
+#crumb dd a.count_is_0 { display:none;}
+
+.page.count_is_0{border-bottom: 1px solid #999; height: 22px;}
+.page.count_is_0 dt { font-family:Arial; font-size:14px; font-weight:bold;background: url(http://sfr.tidebuy.com/images/searchNone_icon.jpg) no-repeat 0 4px; padding-left:17px;}
+.page.count_is_0 .return a{ border:none; color: #333;text-decoration: underline; float:right; background:none; padding:0;}
+.page.count_is_0 .return a:hover {  background:none; }
+.list_gcon.count_is_0 { display:none;}
+
+/* questwords  page  search none   recommend  */
+
+.list_gcon.recom_list{ margin-top:0; padding:0;}
+.recom_list p { font-family:Arial; font-size:14px; color:#333; margin-left:16px;line-height: 30px;  font-weight:bold;}
+.recom_list .l_g_s{width:190px; margin:0 6px 20px 0; min-height: 310px;text-align: center}
+.recom_list .l_g_s dd {float:left; margin:0; width:190px; height:254px; overflow:hidden; text-align:center;}
+.recom_list .l_g_s dd.last{margin-right:0;}
+.recom_list .l_g_s dd a{border:1px solid #ecebeb;width:188px;height:252px; display:table-cell; vertical-align:middle; }
+.recom_list .l_g_s dd img{  max-width:188px; max-height:252px;}
+.recom_list .l_g_s dt .dname {color:#333; font-size:12px; display:block; width:190px; line-height:20px; height:20px; margin:5px 0 2px 0;overflow: hidden;}
+.recom_list .l_g_s .fs11p{color:#333; font-weight:bold;}
+.recom_list .l_g_s .fs11p .fuhao{font-weight:normal;}
+.recom_list .l_g_s .fs11p i .fuhao{color:#333;}
+.recom_list .l_g_s .fs11p i .huobi{color:#f40017;}
+
+.recom_list .l_g_s .span3,
+.recom_list .l_g_s .span3 span { display:inline-block;*zoom:1;}
+.recom_list .l_g_s .span3 .star{margin-top: 5px;}
+.recom_list .l_g_s .span3 .star{ background: url('http://sfr.tidebuy.com/images/rec_stars.png') no-repeat 0 0;width: 63px;height: 11px; *height:14px; display:inline-block;*zoom:1;}
+.recom_list .l_g_s .span3 .star.stars0 { background-position:-1px -110px;}
+.recom_list .l_g_s .span3 .star.stars10 { background-position:-1px -88px;}
+.recom_list .l_g_s .span3 .star.stars20 { background-position:0 -66px;}
+.recom_list .l_g_s .span3 .star.stars30 { background-position:0 -44px;}
+.recom_list .l_g_s .span3 .star.stars40 { background-position:0 -22px;}
+.recom_list .l_g_s .span3 .star.stars50 { background-position:0 0;}
+
+.recom_list .l_g_s .span3 .c0 { text-decoration:underline; margin-left:10px;}
+
+
+/* 404  page  recommend*/
+.error_pro_list_warp { margin:0 auto; width:1000px; clear:both; overflow:hidden;}
+.error_pro_list_warp p { font-family:Arial; font-size:14px; font-weight:bold;background: url(http://sfr.tidebuy.com/images/searchNone_icon.jpg) no-repeat 0 12px; padding-left:17px; line-height:30px; margin-top: 10px; }
+.error_pro_list{ position:relative; width:998px; height:385px; border:1px solid #edecec; overflow:hidden;*padding-top:12px;}
+
+.error_pro_list .button_pre{position:absolute;top:42%;left:0;background:url(http://sfr.tidebuy.com/images/err_rec_arr.png) no-repeat no-repeat 0 -72px; width: 39px; height: 38px;display:block; z-index:5;}
+.error_pro_list .button_next{position:absolute;top:42%;right:0;background:url(http://sfr.tidebuy.com/images/err_rec_arr.png) no-repeat no-repeat  -84px -72px;width:40px;height: 38px;display:block; z-index:5;}
+.error_pro_list .button_pre:hover{ background-position: 0 -136px;}
+.error_pro_list .button_next:hover{ background-position:-84px -136px;}
+.error_pro_list .button_pre.pre_cannotClick {background-position: 0 0; cursor:default;}
+.error_pro_list .button_next.next_cannotClick{background-position:-84px 0;cursor:default; }
+.error_pro_list .imgListNode_outer {margin: 12px 0 0 54px; width: 900px; height:394px; overflow:hidden;}
+.error_pro_list .list_ul1,
+.error_pro_list .list_ul2{display:block;float:left;height:394px;}
+.error_pro_list li { float:left; width:220px; margin-right:5px; overflow:hidden; text-align:center;}
+.error_pro_list li.last {margin-right:0;}
+.error_pro_list li .link_img {border:1px solid #edecec;width:218px;height:292px; display:table-cell; vertical-align:middle; }
+.error_pro_list li img{  max-width:218px; max-height:292px;}
+.error_pro_list li .pro_tit { color:#333; font-size:12px; display:block; width:220px; line-height:20px; height:20px; margin:5px 0 2px 0;overflow: hidden; }
+.error_pro_list li .pro_tit:hover{ color: #CE2226; text-decoration:underline;}
+.error_pro_list li .price b {color:#333;}
+.error_pro_list li .price b .fuhao { font-weight:normal;}
+.error_pro_list li .price b.price2 .huobi { color:#f40017;}
+.error_pro_list li .price .price1 { text-decoration:line-through; }
+.error_pro_list li .rec_stars{margin-top: 5px;}
+.error_pro_list li .rec_stars i { background: url('http://sfr.tidebuy.com/images/rec_stars.png') no-repeat 0 0;width: 63px;height: 11px; display:inline-block;*zoom:1;}
+.error_pro_list li .rec_stars i.l_star0 { background-position:-1px -110px;}
+.error_pro_list li .rec_stars i.l_star10 { background-position:-1px -88px;}
+.error_pro_list li .rec_stars i.l_star20 { background-position:0 -66px;}
+.error_pro_list li .rec_stars i.l_star30 { background-position:0 -44px;}
+.error_pro_list li .rec_stars i.l_star40 { background-position:0 -22px;}
+.error_pro_list li .rec_stars i.l_star50 { background-position:0 0;}
+
+.error_pro_list li .rec_stars a { text-decoration:underline; margin-left:10px;}

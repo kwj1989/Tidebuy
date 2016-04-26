@@ -1,0 +1,106 @@
+﻿<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Mon Compte</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <link href="css/newstyle.css" rel="stylesheet" type="text/css" />
+    <link href="css/fr_style.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+    <div class="in_right">
+        <div class="r_tit"><span>&nbsp;</span></div>
+        <div class="order_tit">
+            <a href="Order?flag=pay">Paiement en attente <span>(3)</span></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="Order?flag=confirm">En attente de Confirmation du paquet<span>(0)</span></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="Order?flag=eval">En attente d'évaluation<span>(0)</span></a>
+        </div>
+        <div class="m_tit">
+            <a href="Order?flag=all" class="m_toac">Historique des commandes</a>
+            <a href="Order?flag=dis" class="m_touc ml4p">Commandes contestée</a>
+            <a href="Order?flag=can" class="m_touc ml4p">Commande annulée</a>
+        </div>
+        <table width="688" cellspacing="0" cellpadding="0" border="0" class="tuo mallp" style="border-top:none; margin-bottom:0px;">
+            <tbody>
+                <tr>
+                    <th width="71">&nbsp;&nbsp;Sous-Ordre N.</th>
+                    <th width="228" align="left">&nbsp;&nbsp;Article</th>
+                    <th width="68">Prix de l'article</th>
+                    <th width="47">Montant</th>
+                    <th width="84">État des commandes</th>
+                    <th width="91">Grand Total</th>
+                    <th width="96">Opération</th>
+                </tr>
+                <tr>
+                    <td class="d1" colspan="7">
+                        <span>Numéros de commande.802257 </span>
+                        <span>Date pour passer la commande : 02-28-2015 18:16:14 </span>
+                    </td>
+                </tr>
+                <tr class="tr1">
+                    <td class="tac">1465898</td>
+                    <td>
+                        <dl class="d1">
+                            <dt><a href="http://fr.tidebuy.com/product/Robe-de-Jour-Couleur-Solide-Manches-Longues-11154763.html"><img id="img1465898" src="http://sfr.tidebuy.com/images/product/11/11154/11154763_1_s.jpg" /></a></dt>
+                            <dd>
+                                <a href="http://fr.tidebuy.com/product/Robe-de-Jour-Couleur-Solide-Manches-Longues-11154763.html" title="Robe de Jour Couleur Solide Manches Longues ">Robe de Jour Couleur Solide Manches Longues</a>
+                                <span>Couleur-Noir </span><span>Taille-M</span>
+                            </dd>
+                        </dl>
+                    </td>
+                    <td class="tac">EUR15.69</td>
+                    <td class="d2 tac">1</td>
+                    <td class="d2">
+                        Paiement en attente
+                    </td>
+                    <td rowspan="1" class="d2 tac">
+                        <div style="margin-top:0px;">EUR43.31</div>
+                        <div style="margin-top:5px;">Expédition accéléréeCost</div>EUR27.62
+                    </td>
+                    <td rowspan="1" class="d4 tac">
+                        <input type="button" value="Acheter maintenant" onclick="GoPayMent('802257')" class="cpointer" style="margin-top:5px;" />
+                        <a href="OrderDetails?orderID=802257" style="margin-top:5px;">Voir détails</a>
+                        <a style="cursor:pointer;margin-top:5px;" onclick="CancelOrder('802257','1465898');">Annuler la commande</a>
+                        <span id="em_friend" title="Recommander à un ami" onclick="Emails()"></span>
+                        <div id="emailBox">
+                            <div class="emtop">Recommander à un ami<span onclick="$('#emailBox').fadeOut('slow')"></span></div>
+                            <table width="510">
+                                <tbody>
+                                    <tr>
+                                        <td style="padding-left:38px">Votre e-mail<span style="color: Red;">*</span></td>
+                                        <td><input type="text" id="UserEmail" value="kuaiweijie@tidebuy.net" class="em_input" /><p style="color: Red;">&nbsp;</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding-left:38px">Votre nom &amp; prénom</td>
+                                        <td><input type="text" id="User_Name" class="em_input" /><p style="color: Red;">&nbsp;</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding-left:38px">E-mail du destinataire<span style="color: Red;">*</span></td>
+                                        <td><input type="text" id="SendEmail" class="em_input" /><p style="color: #000;" class="p_em">Ajoutez un point-virgule entre chaque adresse</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding-left:38px">Votre message</td>
+                                        <td><textarea name="txtItemRemark" id="UserMessage" cols="" rows="" class="em_text"></textarea><p style="color: Red;">&nbsp;</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td style="color:#000;">(<span style="color:red">*</span>) champs obligatoires<p style="color: Red;">&nbsp;</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td><input type="button" onclick="AddSendEmail('11154763')" class="subx_em" value="ENVOYER" /></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <div class="bar_con tar tlin mallp"><span>Page 1of 1</span><font color="red">1</font></div><div class="clear"></div>
+    </div>
+
+</body>
+</html>

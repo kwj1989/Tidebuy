@@ -1,0 +1,205 @@
+﻿<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Mon Compte</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <link href="css/newstyle.css" rel="stylesheet" type="text/css" />
+    <link href="css/fr_style.css" rel="stylesheet" type="text/css" />   
+    <script type="text/javascript">
+        jQuery(document).ready(function() {
+            jQuery("a.a_le").click(function() {
+                jQuery(".l_list dt").css({"background-position": "left -33px" });
+                jQuery(this).parent().parent().parent().parent().find('dt').css({"background-position": "left -61px" });
+                jQuery(".l_list dd ul li").removeClass("lb");
+                jQuery(this).parent().addClass("lb");
+            });
+        });</script>
+</head>
+<body>
+    <!--header-start-->
+    <link rel="icon" type="image/x-icon" href="http://sfr.tidebuy.com/images/favicon.ico" media="screen" />
+    <link rel="shortcut icon" type="image/x-icon" href="http://sfr.tidebuy.com/images/favicon.ico" media="screen" />
+    <link rel="apple-touch-icon" href="http://sfr.tidebuy.com/images/logo_icon.png" /><!--header-end--><!--Account-start--><div id="content">
+        <!--Account-end-->
+    <!--left begin-->
+    <div class="in_left">
+        <div class="l_tit"><img src="images/a_left_bg2.png" /></div>
+        <div class="l_conn">
+            <dl class="l_search">
+               <dt>Ordres de recherche</dt>
+               <dd><input id="tb_searchOrder" type="text" class="wbk caaa" value="" onfocus="searchFocus();" onblur="searchBlur();" />
+               <input type="button" class="but" onclick="SearchOrder()" />
+               </dd>
+            </dl>
+        <div class="l_line"></div>
+        <dl class="l_list" id="dl_order">
+             <dt><span class="a_le abg1">Commandes</span></dt>
+             <dd>
+               <ul>
+                   <li class="la" id="li_view"><a href="http://fr.tidebuy.com/account/Order?flag=all" class="a_le">Afficher commande</a></li>
+                   <li class="la" id="li_disputed"><a href="http://fr.tidebuy.com/account/Order?flag=dis" class="a_le">Commandes contestée</a></li>
+                   <li class="la" id="li_cancelled"><a href="http://fr.tidebuy.com/account/Order?flag=can" class="a_le">Commande annulée</a></li>
+                   <li class="la" id="li_expedited"><a href="http://fr.tidebuy.com/account/OrderExpedit" class="a_le">Livraison accélérée</a></li>
+                </ul>
+               <input id="btn_openDispite" name="" type="button" class="but2 ml26p" onclick="javascript:location.href=&#39;OrderComplaint&#39;" />
+             </dd>
+        </dl>
+        <dl class="l_list" id="dl_coupons">
+            <dt>
+              <span class="abg2 a_le">COUPONS</span>
+            </dt>
+            <dd>
+              <ul>
+                 <li class="la" id="li_coupons"><a href="http://fr.tidebuy.com/accountb/OrderCoupons" class="a_le">Mes Coupons</a></li>
+              </ul>
+            </dd>
+         </dl>
+        <dl class="l_list" id="dl_message">
+            <dt><span class="abg3 a_le">LA BOÎTE DE MESSAGE</span></dt>
+            <dd>
+            <ul>
+                <li class="la" id="li_inbox"><a href="http://fr.tidebuy.com/account/Message?type=Inbox" class="a_le">Boîte de réception</a></li>
+                <li class="la" id="li_outbox"><a href="http://fr.tidebuy.com/account/Message?type=Outbox" class="a_le">Boîte d'envoi</a></li>
+            </ul>
+            <input id="btn_openSendMsg" type="button" class="ml26p but3" onclick="javascript:location.href=&#39;MessageSend&#39;" />
+            </dd>
+        </dl>
+        <dl class="l_list" id="dl_person">
+            <dt><span class="abg4 a_le">PERSONNALISATION</span></dt>
+            <dd>
+              <ul>
+                <li class="la" id="li_favorites"><a href="http://fr.tidebuy.com/account/MyFavorites" class="a_le">Mes Favoris</a></li>
+                <li class="la" id="li_reviews"><a href="http://fr.tidebuy.com/account/MyReviews" class="a_le">Mes Avis</a></li>
+              </ul>
+            </dd>
+         </dl>
+        <dl class="l_list" id="dl_setting">
+            <dt><span class="abg5 a_le">RÉGLAGES</span></dt>
+            <dd>
+             <ul>
+                <li class="la" id="li_address"><a href="http://fr.tidebuy.com/account/ManageAddress" class="a_le">Gérer Adresse</a></li>
+                <li class="la" id="li_password"><a href="http://fr.tidebuy.com/account/ChangePassword" class="a_le">Changer de mot de passe</a></li>
+             </ul>
+             </dd>
+         </dl>
+        <dl class="l_list">
+             <dt>
+               <span class="abg6">AIDE</span>
+             </dt>
+             <dd>
+              <ul>
+                 <li class="la"><a href="http://aide.tidebuy.com/Mode-de-paiements-11/" class="a_le">Quelle méthode de paiement puis-je utiliser</a></li>
+                 <li class="la"><a href="http://aide.tidebuy.com/Temps-de-traitement-des-articles-23.html#detail1">Comment suivre les commandes</a></li>
+                 <li class="la"><a href="http://aide.tidebuy.com/Si-je-commande-des-articles-sur-Tidebuycom-combien-ca-va-me-couter-au-total-28.html#detail1" class="a_le">Comment calculer les frais d'expédition</a></li>
+                 <li class="la"><a href="http://aide.tidebuy.com/" class="a_le">plus...</a></li>
+              </ul>
+            </dd>
+          </dl>
+        </div>
+    </div>
+        <script type="text/javascript">
+            function SearchOrder()
+            {
+                var orderid = jQuery("#tb_searchOrder").val();
+                if (orderid == 'Numéro de commande')
+                    return;
+                var url = 'OrderSearch?SearchOrder=' + escape(orderid);
+                window.location = url;
+            }
+            var dt='';//alert(dt);
+            var li = ''; //alert(li);
+            jQuery(document).ready(function()
+            {
+                jQuery("#dl_" + dt + " dt").css({ "background-position": "left -61px" });
+                if (jQuery("#li_" + li))
+                    jQuery("#li_" + li).addClass("lb");
+                var searchOrder = jQuery('#tb_searchOrder').val();
+                if (searchOrder == '')
+                {
+                    jQuery('#tb_searchOrder').val('Entrez votre numéro de commande');
+                    jQuery('#tb_searchOrder').addClass("caaa");
+                }
+            });
+            function searchFocus()
+            {
+                var searchOrder = jQuery('#tb_searchOrder').val();
+                if (searchOrder == 'Entrez votre numéro de commande')
+                {
+                    jQuery('#tb_searchOrder').val('');
+                    jQuery('#tb_searchOrder').removeClass("caaa");
+                    jQuery('#tb_searchOrder').addClass("c000");
+                }
+                else
+                {
+                    jQuery('#tb_searchOrder').removeClass("caaa");
+                    jQuery('#tb_searchOrder').addClass("c000");
+                }
+            }
+            function searchBlur()
+            {
+                var searchOrder = jQuery('#tb_searchOrder').val();
+                if (searchOrder == '')
+                {
+                    jQuery('#tb_searchOrder').val('Entrez votre numéro de commande');
+                    jQuery('#tb_searchOrder').removeClass("c000");
+                    jQuery('#tb_searchOrder').addClass("caaa");
+                }
+                else
+                {
+                    jQuery('#tb_searchOrder').removeClass("caaa");
+                    jQuery('#tb_searchOrder').addClass("c000");
+                }
+            }
+            function Refrsh() {
+                location.href = location.href;
+            }
+            var read = window.setInterval(Refrsh, 100000);</script><!--left end--><!--right begin-->
+        <div class="in_right">
+            <div class="r_tit"><span>&nbsp;</span></div>
+            <dl class="rem">
+                <dt><a href="javascript:void(0)"></a></dt>
+                <dd>
+                  <ul>
+                     <li>Vous avez <span style="color:#cc0000">3</span> commande(s) en attente de paiement.</li>
+                     <li><a href="http://fr.tidebuy.com/accountb/Order?flag=pay" style="text-decoration:underline;">Voir détails</a></li>
+                  </ul>
+                </dd>
+            </dl>    
+            <dl class="help">
+                <dt><a href="javascript:void(0)"></a></dt>
+                <dd>
+                  <ul>
+                     <li class="la"><a href="http://aide.tidebuy.com/Mode-de-paiements-11/" class="a_le">Quelle méthode de paiement puis-je utiliser</a></li>
+                     <li class="la"><a href="http://aide.tidebuy.com/Comment-Payer-avec-Western-Union-20.html#detail6" class="a_le">Comment utiliser la méthode de paiement hors ligne</a></li>
+                     <li class="la"><a href="http://aide.tidebuy.com/Temps-de-traitement-des-articles-23.html#detail1">Comment suivre les commandes</a></li>
+                     <li class="la"><a href="http://aide.tidebuy.com/Quest-ce-coupon-11.html#detail2" class="a_le">Quelle est votre politique préférentielle</a></li>
+                     <li class="la"><a href="http://aide.tidebuy.com/How-to-Get-a-Coupon-111.html#detail3" class="a_le">Comment puis-je utiliser mon coupon</a></li>
+                     <li class="la"><a href="http://aide.tidebuy.com/Vous-pouvez-choisir-2-modes-d%E2%80%99expedition-26.html#detail1" class="a_le">Nos principales méthodes de livraison</a></li>
+                     <li class="la"><a href="http://aide.tidebuy.com/Si-je-commande-des-articles-sur-Tidebuycom-combien-ca-va-me-couter-au-total-28.html#detail1" class="a_le">Comment calculer les frais d'expédition</a></li>
+                     <li class="la"><a href="http://aide.tidebuy.com/Si-je-commande-des-articles-sur-Tidebuycom-combien-ca-va-me-couter-au-total-28.html#detail1" class="a_le">Que faire si j’ai une commande urgente</a></li>
+                     <li class="la"><a href="http://aide.tidebuy.com/11-Manque-de-fonctions-41.html#detail1" class="a_le">Quelle est votre politique de retour si l'article n'est pas le même que dans la description?</a></li>
+                     <li class="la"><a href="http://aide.tidebuy.com/1L%E2%80%99information-du-tracage-n%E2%80%99est-pas-disponible-36.html#detail1" class="a_le">Comment faire si je n'ai pas recu mon article?</a></li>
+                     <li class="la"><a href="http://aide.tidebuy.com/" class="a_le">plus...</a></li>
+                    </ul>
+                </dd>
+             </dl>
+             <dl class="rec">
+                <dt><a href="javascript:void(0)"></a></dt>
+                <dd>
+                    <ul>
+                        <li><a href="http://fr.tidebuy.com/product/Superbe-Robe-Pliss%C3%A9e-en-Mousseline-de-Soie-10946482.html"><img src="images/10946482_17_s.jpg" /></a><p><a href="http://fr.tidebuy.com/product/Superbe-Robe-Pliss%C3%A9e-en-Mousseline-de-Soie-10946482.html">Superbe Robe Plissée en Mousseline de Soie </a></p><span class="red l_price"><i class="fuhao">EUR €</i><i class="huobi" data-price="11.59">11,59</i></span></li>
+                        <li><a href="http://fr.tidebuy.com/product/Asymmetric-Floral-Print-3-4-Sleeve-Day-Dress-11571563.html"><img src="images/11571563_5_s.jpg" /></a><p><a href="http://fr.tidebuy.com/product/Asymmetric-Floral-Print-3-4-Sleeve-Day-Dress-11571563.html">Asymmetric Floral Print 3/4 Sleeve Day Dress </a></p><span class="red l_price"><i class="fuhao">EUR €</i><i class="huobi" data-price="14.99">14,99</i></span></li>
+                        <li><a href="http://fr.tidebuy.com/product/Robe-Impression-Europ%C3%A9en-Style-Europ%C3%A9en-tr%C3%A8s-Demand%C3%A9-11404157.html"><img src="images/11404157_1_s.jpg" /></a><p><a href="http://fr.tidebuy.com/product/Robe-Impression-Europ%C3%A9en-Style-Europ%C3%A9en-tr%C3%A8s-Demand%C3%A9-11404157.html">Robe Impression Européen Style Européen très Demandé</a></p><span class="red l_price"><i class="fuhao">EUR €</i><i class="huobi" data-price="10.59">10,59</i></span></li>
+                        <li><a href="http://fr.tidebuy.com/product/Veste-Chic-Bicolore-Style-Cor%C3%A9en-10680915.html"><img src="images/10680915_12_s.jpg" /></a><p><a href="http://fr.tidebuy.com/product/Veste-Chic-Bicolore-Style-Cor%C3%A9en-10680915.html">Veste Chic Bicolore Style Coréen </a></p><span class="red l_price"><i class="fuhao">EUR €</i><i class="huobi" data-price="9.59">9,59</i></span></li>
+                        <li><a href="http://fr.tidebuy.com/product/Robe-de-Jour-Courte-Europ%C3%A9en-Style-en-Vogue-3-4-Manche-11343469.html"><img src="images/11343469_7_s.jpg" /></a><p><a href="http://fr.tidebuy.com/product/Robe-de-Jour-Courte-Europ%C3%A9en-Style-en-Vogue-3-4-Manche-11343469.html">Robe de Jour Courte Européen Style en Vogue 3/4 Manche</a></p><span class="red l_price"><i class="fuhao">EUR €</i><i class="huobi" data-price="6.29">6,29</i></span></li>
+                    </ul>
+                </dd>
+            </dl>
+        </div><!--right end--><div class="clear"></div>
+    </div>
+
+    <div class="clear">&nbsp;</div><div class="footer_top"><div class="fwdiv"><div class="fldiv"><a href="http://fr.tidebuy.com/#">&nbsp;</a></div></div></div>
+
+</body>
+</html>

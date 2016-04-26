@@ -1,0 +1,74 @@
+﻿<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Mon Compte</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <link href="css/newstyle.css" rel="stylesheet" type="text/css" />
+    <link href="css/fr_style.css" rel="stylesheet" type="text/css" />
+    <style>
+        body {
+            background: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="in_right">
+        <div class="r_tit"><span>&nbsp;</span></div><div class="order">
+            <div class="ma_tit"></div>
+              <form method="post" action="/do3.html?type=addcomplaint" enctype="multipart/form-data">
+                <table style="width:98%" class="odtable mb40p">
+                    <tbody>
+                        <tr>
+                           <td style="width:20%" class="tar">Votre numéros de commande.&nbsp;<span class="redl">*</span>&nbsp;</td>
+                           <td><input id="tb_orderNo" name="orderNo" type="text" class="oan" />&nbsp;&nbsp;<span id="s_orderNo" style="color:Red;" class="fs11p"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="tar" valign="top">Votre problème&nbsp;<span class="redl">*</span>&nbsp;</td>
+                            <td>
+                                <textarea id="tb_content" name="content" class="name2"></textarea>
+                                <span id="s_content" style="color:Red; display:none; font-size:11px;">Veuillez laisser quelque chose que nous puissions essayer de vous satisfaire</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="top" class="tar">Télécharger la pièce jointe&nbsp;&nbsp;</td>
+                            <td>
+                                <input name="" type="button" value="Ajouter une pièce-jointe" onclick="AddFile()" />
+                                <div id="d_file" class="fs11p"></div>
+                                  <font class="c666 fs11p">Vous pouvez télécharger au plus trois Annexes au format jpg, png, gif, et chaque pièce jointe devrait pas dépasser la taille de plus de 500 K</font>
+                            </td>
+                        </tr>
+                        <tr>
+                           <td></td><td align="left" style="padding:0px;"></td></tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <input id="Submit" type="submit" class="su" onclick="return check();" value="" />
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+        </div><div class="clear"></div>
+         <dl class="help">
+           <dt><a href="#"></a></dt>
+           <dd>
+             <ul>
+               <li class="la"><a href="http://help.tidebuy.com/Payment-Options-113.html#detail1" class="a_le">Quelle méthode de paiement puis-je utiliser</a></li>
+               <li class="la"><a href="http://help.tidebuy.com/Payment-Options-113.html#detail6" class="a_le">Comment utiliser la méthode de paiement hors ligne</a></li>
+               <li class="la"><a href="http://help.tidebuy.com/How-can-I-trace-my-order-120.html#detail3">Comment suivre les commandes</a></li>
+               <li class="la"><a href="http://help.tidebuy.com/How-to-Get-a-Coupon-111.html#detail1" class="a_le">Quelle est votre politique préférentielle</a></li>
+               <li class="la"><a href="http://help.tidebuy.com/How-to-Get-a-Coupon-111.html#detail3" class="a_le">Comment puis-je utiliser mon coupon</a></li>
+               <li class="la"><a href="http://help.tidebuy.com/There-are-two-main-shipping-methods-to-choose-from-which-is-your-favorite-116.html#detail1" class="a_le">Nos principales méthodes de livraison</a></li>
+               <li class="la"><a href="http://help.tidebuy.com/If-I-order-products-from-Tidebuycom-how-much-would-it-cost-117.html#detail1" class="a_le">Comment calculer les frais d'expédition</a></li>
+               <li class="la"><a href="http://help.tidebuy.com/If-I-order-products-from-Tidebuycom-how-much-would-it-cost-117.html#detail3" class="a_le">Que faire si j'ai une commande urgente</a></li>
+               <li class="la"><a href="http://help.tidebuy.com/11-Lack-of-functions-98.html#detail1" class="a_le">Quelle est votre politique de retour si l'article n'est pas le même que dans la description?</a></li>.
+               <li class="la"><a href="http://help.tidebuy.com/1Tracking-information-is-unavailable-91.html#detail1" class="a_le">Comment faire si je n'ai pas recu mon article?</a></li>
+               <li class="la"><a href="http://help.tidebuy.com/" class="a_le">plus...</a></li>
+             </ul>
+           </dd>
+         </dl>
+    </div>
+
+</body>
+</html>

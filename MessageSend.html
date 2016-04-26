@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+<!-- saved from url=(0043)http://fr.tidebuy.com/accountb/default.aspx -->
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Mon Compte</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <link href="css/newstyle.css" rel="stylesheet" type="text/css" />
+    <link href="css/fr_style.css" rel="stylesheet" type="text/css" />
+    <style>
+        body {
+            background: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="in_right">
+        <div class="r_tit"><span>&nbsp;</span></div>
+           <div class="o_tit"></div>
+            <form action="/do4.html?type=addInfoNew" method="post" id="MessageSend" name="MessageSend" enctype="multipart/form-data">
+                <table style="width:660px" class="mallp p1px0">
+                    <tbody>
+                        <tr>
+                           <td class="tar" style=" width:110px;">Titre<span class="red">*</span>&nbsp;</td>
+                           <td><input type="text" name="title" id="title" class="name" value=""></td>
+                        </tr>
+                        <tr>
+                           <td></td>
+                           <td><span id="title_err" class="red fs11p"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="tar" style=" width:110px;">Type<span class="red">*</span>&nbsp;</td>
+                            <td><span id="Type">
+                                    <select style="">
+                                      <option value="0">All</option>
+                                      <option value="1">Avant la vente</option>
+                                      <option value="2">Consulter la commande</option>
+                                      <option value="3">Probleme Apres-vente</option>
+                                     </select>
+                                     <select style="display: none;"></select>
+                                     <select style="display: none;"></select>
+                                </span>
+                               <input type="hidden" name="MsType" id="hType" value="0">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="240" align="right"></td>
+                            <td><span id="type_err" style="color:Red;"></span></td>
+                        </tr><!--xinjia-->
+                        <tr>
+                           <td class="tar">Votre numéros de commande.&nbsp;</td>
+                           <td><input type="text" class="name" name="orderNo" id="tb_orderNo">&nbsp;&nbsp;</td>
+                        </tr>
+                        <tr>
+                           <td class="tar"></td>
+                           <td class=" fs11p caaa">Lorsque vous nous contactez, s'il vous plaît laissez votre numéro de commande afin que nous puissions vous aider plus efficacement.</td>
+                        </tr><!--xinjia end-->
+
+                        <tr>
+                            <td class="tar">Numéros de téléphone&nbsp;</td>
+                            <td><input type="text" name="phoneno" id="phoneno" class="name"></td>
+                        </tr>
+                        <tr>
+                             <td class="tar"></td>
+                             <td class=" fs11p caaa">Vous peut également laisser votre numéro de téléphone, afin que nous puissions vous contacter directement.</td>
+                        </tr>
+                        <tr>
+                             <td class="tar" valign="top">Message<span class="red">*</span>&nbsp;</td>
+                             <td><textarea name="content" id="content" class="name2" style=" width:440px;margin-bottom: 4px;"></textarea></td>
+                        </tr>
+                        <tr>
+                             <td class="tar"></td>
+                             <td><span id="content_err" class="red fs11p"></span></td>
+                         </tr>
+                        <tr>
+                             <td valign="top" class="tar">Télécharger la pièce jointe&nbsp;</td>
+                             <td><input name="" type="button" onclick="javascript:addAttach()" value="Ajouter une pièce-jointe"><div id="Addfj"></div></td>
+                        </tr>
+                        <tr>
+                             <td></td>
+                             <td class=" fs11p caaa">Vous pouvez télécharger au plus trois Annexes au format jpg, png, gif, et chaque pièce jointe devrait pas dépasser la taille de plus de 500 K</td>
+                        </tr>
+                        <tr>
+                             <td></td><td></td></tr>
+                        <tr style="height:30px;">
+                             <td>&nbsp;</td><td><span style="color:Red; font-weight:bold;"></span></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input id="" name="" value="" type="button" class="su" onclick="ViledateForm()"></td>
+                        </tr>
+                    </tbody>
+                </table>
+        </form>
+         <dl class="help">
+            <dt><a href="javascript:void(0)"></a></dt>
+            <dd>
+               <ul>
+                 <li class="la"><a href="http://aide.tidebuy.com/Mode-de-paiements-11/" class="a_le">Quelle méthode de paiement puis-je utiliser</a></li>
+                 <li class="la"><a href="http://aide.tidebuy.com/Comment-Payer-avec-Western-Union-20.html#detail6" class="a_le">Comment utiliser la méthode de paiement hors ligne</a></li>
+                 <li class="la"><a href="http://aide.tidebuy.com/Temps-de-traitement-des-articles-23.html#detail1">Comment suivre les commandes</a></li>
+                 <li class="la"><a href="http://aide.tidebuy.com/Quest-ce-coupon-11.html#detail2" class="a_le">Quelle est votre politique préférentielle</a></li>
+                 <li class="la"><a href="http://aide.tidebuy.com/How-to-Get-a-Coupon-111.html#detail3" class="a_le">Comment puis-je utiliser mon coupon</a></li>
+                 <li class="la"><a href="http://aide.tidebuy.com/Vous-pouvez-choisir-2-modes-d%E2%80%99expedition-26.html#detail1" class="a_le">Nos principales méthodes de livraison</a></li>
+                 <li class="la"><a href="http://aide.tidebuy.com/Si-je-commande-des-articles-sur-Tidebuycom-combien-ca-va-me-couter-au-total-28.html#detail1" class="a_le">Comment calculer les frais d'expédition</a></li>
+                 <li class="la"><a href="http://aide.tidebuy.com/Si-je-commande-des-articles-sur-Tidebuycom-combien-ca-va-me-couter-au-total-28.html#detail1" class="a_le">Que faire si j'ai une commande urgente</a></li>
+                 <li class="la"><a href="http://aide.tidebuy.com/11-Manque-de-fonctions-41.html#detail1" class="a_le">Quelle est votre politique de retour si l'article n'est pas le même que dans la description?</a></li>
+                 <li class="la"><a href="http://aide.tidebuy.com/1L%E2%80%99information-du-tracage-n%E2%80%99est-pas-disponible-36.html#detail1" class="a_le">Comment faire si je n'ai pas recu mon article?</a></li>
+                 <li class="la"><a href="http://aide.tidebuy.com/" class="a_le">plus...</a></li>
+                </ul>
+             </dd>
+         </dl>
+    </div>
+</body>
+</html>
